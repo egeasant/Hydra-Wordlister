@@ -1,0 +1,27 @@
+# Nmap 7.99 scan initiated Mon Aug 24 14:09:42 2026 as: /usr/lib/nmap/nmap -Pn -T4 -p- --min-rate=1000 -oA ./nmap_20260824_140936/02_full_tcp ifs06.prodb.com.br
+Nmap scan report for ifs06.prodb.com.br (45.239.41.7)
+Host is up (0.020s latency).
+rDNS record for 45.239.41.7: reverso-45-239-41-7.prodb.com.br
+Not shown: 65516 filtered tcp ports (no-response)
+PORT      STATE SERVICE
+80/tcp    open  http
+443/tcp   open  https
+1194/tcp  open  openvpn
+1195/tcp  open  rsf-1
+3001/tcp  open  nessus
+3333/tcp  open  dec-notes
+3335/tcp  open  directv-soft
+8015/tcp  open  cfg-cloud
+8088/tcp  open  radan-http
+8089/tcp  open  unknown
+8090/tcp  open  opsmessaging
+9000/tcp  open  cslistener
+9001/tcp  open  tor-orport
+30000/tcp open  ndmps
+30001/tcp open  pago-services1
+30002/tcp open  pago-services2
+35000/tcp open  heathview
+57820/tcp open  unknown
+64800/tcp open  unknown
+
+# Nmap done at Mon Aug 24 14:11:11 2026 -- 1 IP address (1 host up) scanned in 89.04 seconds

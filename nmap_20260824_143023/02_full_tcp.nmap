@@ -1,0 +1,31 @@
+# Nmap 7.99 scan initiated Mon Aug 24 14:30:34 2026 as: /usr/lib/nmap/nmap -Pn -T4 -p- --min-rate=1000 -oA ./nmap_20260824_143023/02_full_tcp arttecmaquinas.com.br
+Nmap scan report for arttecmaquinas.com.br (162.241.138.126)
+Host is up (0.15s latency).
+rDNS record for 162.241.138.126: newmail.sitesahost1.com.br
+Not shown: 65512 filtered tcp ports (no-response)
+PORT     STATE  SERVICE
+20/tcp   closed ftp-data
+21/tcp   open   ftp
+22/tcp   open   ssh
+53/tcp   open   domain
+80/tcp   open   http
+110/tcp  open   pop3
+143/tcp  open   imap
+443/tcp  open   https
+465/tcp  open   smtps
+587/tcp  open   submission
+993/tcp  open   imaps
+995/tcp  open   pop3s
+2077/tcp open   tsrmagt
+2078/tcp open   tpcsrvr
+2079/tcp closed idware-router
+2080/tcp closed autodesk-nlm
+2082/tcp open   infowave
+2083/tcp open   radsec
+2086/tcp open   gnunet
+2087/tcp open   eli
+2095/tcp open   nbx-ser
+2096/tcp open   nbx-dir
+8443/tcp closed https-alt
+
+# Nmap done at Mon Aug 24 14:32:44 2026 -- 1 IP address (1 host up) scanned in 130.04 seconds

@@ -1,0 +1,289 @@
+[14:21:54] === Iniciando enumeração contra: ifs06.prodb.com.br ===
+[14:21:54] Resultados serão salvos em: ./nmap_20260824_142154
+[14:21:54] [1/4] Scan rápido (top 1000 portas TCP) para identificar portas abertas...
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-08-24 14:21 -0300
+Nmap scan report for ifs06.prodb.com.br (45.239.41.7)
+Host is up (0.018s latency).
+rDNS record for 45.239.41.7: reverso-45-239-41-7.prodb.com.br
+Not shown: 990 filtered tcp ports (no-response)
+PORT      STATE SERVICE
+80/tcp    open  http
+443/tcp   open  https
+3001/tcp  open  nessus
+3333/tcp  open  dec-notes
+8088/tcp  open  radan-http
+8089/tcp  open  unknown
+8090/tcp  open  opsmessaging
+9000/tcp  open  cslistener
+9001/tcp  open  tor-orport
+30000/tcp open  ndmps
+
+Nmap done: 1 IP address (1 host up) scanned in 4.87 seconds
+[14:21:59] [2/4] Scan completo TCP (todas as 65535 portas)...
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-08-24 14:21 -0300
+Stats: 0:01:16 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 83.73% done; ETC: 14:23 (0:00:15 remaining)
+Nmap scan report for ifs06.prodb.com.br (45.239.41.7)
+Host is up (0.019s latency).
+rDNS record for 45.239.41.7: reverso-45-239-41-7.prodb.com.br
+Not shown: 65516 filtered tcp ports (no-response)
+PORT      STATE SERVICE
+80/tcp    open  http
+443/tcp   open  https
+1194/tcp  open  openvpn
+1195/tcp  open  rsf-1
+3001/tcp  open  nessus
+3333/tcp  open  dec-notes
+3335/tcp  open  directv-soft
+8015/tcp  open  cfg-cloud
+8088/tcp  open  radan-http
+8089/tcp  open  unknown
+8090/tcp  open  opsmessaging
+9000/tcp  open  cslistener
+9001/tcp  open  tor-orport
+30000/tcp open  ndmps
+30001/tcp open  pago-services1
+30002/tcp open  pago-services2
+35000/tcp open  heathview
+57820/tcp open  unknown
+64800/tcp open  unknown
+
+Nmap done: 1 IP address (1 host up) scanned in 89.71 seconds
+[14:23:28] Portas abertas detectadas: 80,443,1194,1195,3001,3333,3335,8015,8088,8089,8090,9000,9001,30000,30001,30002,35000,57820,64800
+[14:23:28] [3/4] Detecção de versão de serviços e sistema operacional...
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-08-24 14:23 -0300
+Nmap scan report for ifs06.prodb.com.br (45.239.41.7)
+Host is up (0.017s latency).
+rDNS record for 45.239.41.7: reverso-45-239-41-7.prodb.com.br
+
+PORT      STATE SERVICE        VERSION
+80/tcp    open  http-proxy     HAProxy http proxy
+443/tcp   open  ssl/http-proxy HAProxy http proxy
+1194/tcp  open  openvpn        OpenVPN
+1195/tcp  open  rsf-1?
+3001/tcp  open  ssl/http-proxy HAProxy http proxy 2.0.0 or later
+3333/tcp  open  ssl/http-proxy HAProxy http proxy
+3335/tcp  open  ssl/http-proxy HAProxy http proxy 2.0.0 or later
+8015/tcp  open  ssl/http-proxy HAProxy http proxy
+8088/tcp  open  ssl/http-proxy HAProxy http proxy 2.0.0 or later
+8089/tcp  open  ssl/http-proxy HAProxy http proxy 2.0.0 or later
+8090/tcp  open  ssl/http-proxy HAProxy http proxy 2.0.0 or later
+9000/tcp  open  ssl/http-proxy HAProxy http proxy 2.0.0 or later
+9001/tcp  open  ssl/http-proxy HAProxy http proxy 2.0.0 or later
+30000/tcp open  ssl/http-proxy HAProxy http proxy
+30001/tcp open  ssl/http-proxy HAProxy http proxy
+30002/tcp open  ssl/http-proxy HAProxy http proxy
+35000/tcp open  ssl/http-proxy HAProxy http proxy
+57820/tcp open  ssl/http-proxy HAProxy http proxy
+64800/tcp open  ssl/http-proxy HAProxy http proxy 2.0.0 or later
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+No OS matches for host
+Service Info: Device: load balancer
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 37.09 seconds
+[14:24:06] [4/4] Scripts NSE padrão (categoria 'default' e 'safe')...
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-08-24 14:24 -0300
+Nmap scan report for ifs06.prodb.com.br (45.239.41.7)
+Host is up (0.020s latency).
+rDNS record for 45.239.41.7: reverso-45-239-41-7.prodb.com.br
+
+PORT      STATE SERVICE
+80/tcp    open  http
+|_http-title: Site doesn't have a title (text/html).
+443/tcp   open  https
+|_ssl-date: TLS randomness does not represent time
+|_http-title: 403 Forbidden
+| ssl-cert: Subject: commonName=media.prodb.com.br
+| Subject Alternative Name: DNS:acesso4.infopack.com.br, DNS:dorpa.pass.cloud.prodb.com.br, DNS:drive.cloud.prodb.com.br, DNS:ifs02.prodb.com.br, DNS:ifs05.prodb.com.br, DNS:ifs06.prodb.com.br, DNS:ifs12.prodb.com.br, DNS:infopack.prodb.com.br, DNS:media.prodb.com.br, DNS:medical.cloud.prodb.com.br, DNS:office.medical.cloud.prodb.com.br, DNS:passwr.cloud.prodb.com.br, DNS:procloud.prodb.com.br, DNS:soa.prodb.com.br, DNS:testeserv1.sistemaadcom.com.br, DNS:wrealty.prodb.com.br
+| Not valid before: 2026-06-20T05:19:27
+|_Not valid after:  2026-09-18T05:19:26
+1194/tcp  open  openvpn
+1195/tcp  open  rsf-1
+3001/tcp  open  nessus
+| tls-alpn: 
+|   h2
+|_  http/1.1
+| ssl-cert: Subject: commonName=rootermedical.cloud.prodb.com.br
+| Subject Alternative Name: DNS:remoto.rooter.cloud.prodb.com.br, DNS:rootermedical.cloud.prodb.com.br
+| Not valid before: 2026-07-29T02:19:57
+|_Not valid after:  2026-10-27T02:19:56
+|_ssl-date: TLS randomness does not represent time
+3333/tcp  open  dec-notes
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|   h2
+|_  http/1.1
+| ssl-cert: Subject: commonName=rootermedical.cloud.prodb.com.br
+| Subject Alternative Name: DNS:remoto.rooter.cloud.prodb.com.br, DNS:rootermedical.cloud.prodb.com.br
+| Not valid before: 2026-07-29T02:19:57
+|_Not valid after:  2026-10-27T02:19:56
+3335/tcp  open  directv-soft
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|   h2
+|_  http/1.1
+| ssl-cert: Subject: commonName=rootermedical.cloud.prodb.com.br
+| Subject Alternative Name: DNS:remoto.rooter.cloud.prodb.com.br, DNS:rootermedical.cloud.prodb.com.br
+| Not valid before: 2026-07-29T02:19:57
+|_Not valid after:  2026-10-27T02:19:56
+8015/tcp  open  cfg-cloud
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=media.prodb.com.br
+| Subject Alternative Name: DNS:acesso4.infopack.com.br, DNS:dorpa.pass.cloud.prodb.com.br, DNS:drive.cloud.prodb.com.br, DNS:ifs02.prodb.com.br, DNS:ifs05.prodb.com.br, DNS:ifs06.prodb.com.br, DNS:ifs12.prodb.com.br, DNS:infopack.prodb.com.br, DNS:media.prodb.com.br, DNS:medical.cloud.prodb.com.br, DNS:office.medical.cloud.prodb.com.br, DNS:passwr.cloud.prodb.com.br, DNS:procloud.prodb.com.br, DNS:soa.prodb.com.br, DNS:testeserv1.sistemaadcom.com.br, DNS:wrealty.prodb.com.br
+| Not valid before: 2026-06-20T05:19:27
+|_Not valid after:  2026-09-18T05:19:26
+| tls-alpn: 
+|   h2
+|_  http/1.1
+8088/tcp  open  radan-http
+| ssl-cert: Subject: commonName=media.prodb.com.br
+| Subject Alternative Name: DNS:acesso4.infopack.com.br, DNS:dorpa.pass.cloud.prodb.com.br, DNS:drive.cloud.prodb.com.br, DNS:ifs02.prodb.com.br, DNS:ifs05.prodb.com.br, DNS:ifs06.prodb.com.br, DNS:ifs12.prodb.com.br, DNS:infopack.prodb.com.br, DNS:media.prodb.com.br, DNS:medical.cloud.prodb.com.br, DNS:office.medical.cloud.prodb.com.br, DNS:passwr.cloud.prodb.com.br, DNS:procloud.prodb.com.br, DNS:soa.prodb.com.br, DNS:testeserv1.sistemaadcom.com.br, DNS:wrealty.prodb.com.br
+| Not valid before: 2026-06-20T05:19:27
+|_Not valid after:  2026-09-18T05:19:26
+| tls-alpn: 
+|   h2
+|_  http/1.1
+|_http-title: Site doesn't have a title (text/html).
+|_ssl-date: TLS randomness does not represent time
+8089/tcp  open  unknown
+| ssl-cert: Subject: commonName=media.prodb.com.br
+| Subject Alternative Name: DNS:acesso4.infopack.com.br, DNS:dorpa.pass.cloud.prodb.com.br, DNS:drive.cloud.prodb.com.br, DNS:ifs02.prodb.com.br, DNS:ifs05.prodb.com.br, DNS:ifs06.prodb.com.br, DNS:ifs12.prodb.com.br, DNS:infopack.prodb.com.br, DNS:media.prodb.com.br, DNS:medical.cloud.prodb.com.br, DNS:office.medical.cloud.prodb.com.br, DNS:passwr.cloud.prodb.com.br, DNS:procloud.prodb.com.br, DNS:soa.prodb.com.br, DNS:testeserv1.sistemaadcom.com.br, DNS:wrealty.prodb.com.br
+| Not valid before: 2026-06-20T05:19:27
+|_Not valid after:  2026-09-18T05:19:26
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|   h2
+|_  http/1.1
+8090/tcp  open  opsmessaging
+| ssl-cert: Subject: commonName=wrealty.vulcano.cloud.prodb.com.br
+| Subject Alternative Name: DNS:wrealty.vulcano.cloud.prodb.com.br
+| Not valid before: 2026-08-18T02:21:52
+|_Not valid after:  2026-11-16T02:21:51
+| tls-alpn: 
+|   h2
+|_  http/1.1
+|_ssl-date: TLS randomness does not represent time
+9000/tcp  open  cslistener
+| tls-alpn: 
+|   h2
+|_  http/1.1
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=rootermedical.cloud.prodb.com.br
+| Subject Alternative Name: DNS:remoto.rooter.cloud.prodb.com.br, DNS:rootermedical.cloud.prodb.com.br
+| Not valid before: 2026-07-29T02:19:57
+|_Not valid after:  2026-10-27T02:19:56
+9001/tcp  open  tor-orport
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|   h2
+|_  http/1.1
+| ssl-cert: Subject: commonName=rootermedical.cloud.prodb.com.br
+| Subject Alternative Name: DNS:remoto.rooter.cloud.prodb.com.br, DNS:rootermedical.cloud.prodb.com.br
+| Not valid before: 2026-07-29T02:19:57
+|_Not valid after:  2026-10-27T02:19:56
+30000/tcp open  ndmps
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|   h2
+|_  http/1.1
+| ssl-cert: Subject: commonName=medical.web.cloud.prodb.com.br
+| Subject Alternative Name: DNS:medical.web.cloud.prodb.com.br
+| Not valid before: 2026-08-06T02:20:39
+|_Not valid after:  2026-11-04T02:20:38
+30001/tcp open  pago-services1
+| tls-alpn: 
+|   h2
+|_  http/1.1
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=medical.web.cloud.prodb.com.br
+| Subject Alternative Name: DNS:medical.web.cloud.prodb.com.br
+| Not valid before: 2026-08-06T02:20:39
+|_Not valid after:  2026-11-04T02:20:38
+30002/tcp open  pago-services2
+| tls-alpn: 
+|   h2
+|_  http/1.1
+| ssl-cert: Subject: commonName=medical.web.cloud.prodb.com.br
+| Subject Alternative Name: DNS:medical.web.cloud.prodb.com.br
+| Not valid before: 2026-08-06T02:20:39
+|_Not valid after:  2026-11-04T02:20:38
+|_ssl-date: TLS randomness does not represent time
+35000/tcp open  heathview
+| ssl-cert: Subject: commonName=servix.cloud.prodb.com.br
+| Subject Alternative Name: DNS:servix.cloud.prodb.com.br
+| Not valid before: 2026-08-06T02:20:56
+|_Not valid after:  2026-11-04T02:20:55
+| tls-alpn: 
+|   h2
+|_  http/1.1
+|_ssl-date: TLS randomness does not represent time
+57820/tcp open  unknown
+| ssl-cert: Subject: commonName=media.prodb.com.br
+| Subject Alternative Name: DNS:acesso4.infopack.com.br, DNS:dorpa.pass.cloud.prodb.com.br, DNS:drive.cloud.prodb.com.br, DNS:ifs02.prodb.com.br, DNS:ifs05.prodb.com.br, DNS:ifs06.prodb.com.br, DNS:ifs12.prodb.com.br, DNS:infopack.prodb.com.br, DNS:media.prodb.com.br, DNS:medical.cloud.prodb.com.br, DNS:office.medical.cloud.prodb.com.br, DNS:passwr.cloud.prodb.com.br, DNS:procloud.prodb.com.br, DNS:soa.prodb.com.br, DNS:testeserv1.sistemaadcom.com.br, DNS:wrealty.prodb.com.br
+| Not valid before: 2026-06-20T05:19:27
+|_Not valid after:  2026-09-18T05:19:26
+| tls-alpn: 
+|   h2
+|_  http/1.1
+|_ssl-date: TLS randomness does not represent time
+64800/tcp open  unknown
+| tls-alpn: 
+|   h2
+|_  http/1.1
+| ssl-cert: Subject: commonName=media.prodb.com.br
+| Subject Alternative Name: DNS:acesso4.infopack.com.br, DNS:dorpa.pass.cloud.prodb.com.br, DNS:drive.cloud.prodb.com.br, DNS:ifs02.prodb.com.br, DNS:ifs05.prodb.com.br, DNS:ifs06.prodb.com.br, DNS:ifs12.prodb.com.br, DNS:infopack.prodb.com.br, DNS:media.prodb.com.br, DNS:medical.cloud.prodb.com.br, DNS:office.medical.cloud.prodb.com.br, DNS:passwr.cloud.prodb.com.br, DNS:procloud.prodb.com.br, DNS:soa.prodb.com.br, DNS:testeserv1.sistemaadcom.com.br, DNS:wrealty.prodb.com.br
+| Not valid before: 2026-06-20T05:19:27
+|_Not valid after:  2026-09-18T05:19:26
+|_ssl-date: TLS randomness does not represent time
+
+Nmap done: 1 IP address (1 host up) scanned in 11.49 seconds
+[14:24:17] === Enumeração concluída ===
+[14:24:17] Arquivos gerados em: ./nmap_20260824_142154 (.nmap, .xml, .gnmap para cada etapa)
+
+===== RESUMO =====
+Alvo: ifs06.prodb.com.br
+
+-- Portas abertas (80, 443, 1194, 1195, 3001, 3333, 3335, 8015, 8088, 8089, 8090, 9000, 9001, 30000, 30001, 30002, 35000, 57820, 64800) --
+80,443,1194,1195,3001,3333,3335,8015,8088,8089,8090,9000,9001,30000,30001,30002,35000,57820,64800
+
+-- Serviços/versões identificados por porta --
+http-proxy HAProxy http proxy
+openvpn OpenVPN
+rsf-1?
+ssl/http-proxy HAProxy http proxy
+ssl/http-proxy HAProxy http proxy 2.0.0 or later
+
+-- Domínios/hostnames encontrados em certificados SSL (21 únicos) --
+acesso4.infopack.com.br
+dorpa.pass.cloud.prodb.com.br
+drive.cloud.prodb.com.br
+ifs02.prodb.com.br
+ifs05.prodb.com.br
+ifs06.prodb.com.br
+ifs12.prodb.com.br
+infopack.prodb.com.br
+media.prodb.com.br
+medical.cloud.prodb.com.br
+medical.web.cloud.prodb.com.br
+office.medical.cloud.prodb.com.br
+passwr.cloud.prodb.com.br
+procloud.prodb.com.br
+remoto.rooter.cloud.prodb.com.br
+rootermedical.cloud.prodb.com.br
+servix.cloud.prodb.com.br
+soa.prodb.com.br
+testeserv1.sistemaadcom.com.br
+wrealty.prodb.com.br
+wrealty.vulcano.cloud.prodb.com.br
+
+-- Datas de expiração de certificados encontradas --
+2026-09-18T05:19:26
+2026-10-27T02:19:56
+2026-11-04T02:20:38
+2026-11-04T02:20:55
+2026-11-16T02:21:51
+
+Detalhes completos em: ./nmap_20260824_142154/03_service_version.nmap
+Domínios salvos separadamente em: ./nmap_20260824_142154/dominios_encontrados.txt

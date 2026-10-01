@@ -1,0 +1,1142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.99 scan initiated Mon Aug 24 14:11:48 2026 as: /usr/lib/nmap/nmap -Pn -sC -T4 -p 80,443,1194,1195,3001,3333,3335,8015,8088,8089,8090,9000,9001,30000,30001,30002,35000,57820,64800 -oA ./nmap_20260824_140936/04_nse_default ifs06.prodb.com.br -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -Pn -sC -T4 -p 80,443,1194,1195,3001,3333,3335,8015,8088,8089,8090,9000,9001,30000,30001,30002,35000,57820,64800 -oA ./nmap_20260824_140936/04_nse_default ifs06.prodb.com.br" start="1787591508" startstr="Mon Aug 24 14:11:48 2026" version="7.99" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="19" services="80,443,1194-1195,3001,3333,3335,8015,8088-8090,9000-9001,30000-30002,35000,57820,64800"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1787591508" endtime="1787591519"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="45.239.41.7" addrtype="ipv4"/>
+<hostnames>
+<hostname name="ifs06.prodb.com.br" type="user"/>
+<hostname name="reverso-45-239-41-7.prodb.com.br" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="56"/><service name="http" method="table" conf="3"/><script id="http-title" output="Site doesn&apos;t have a title (text/html)."></script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="56"/><service name="https" method="table" conf="3"/><script id="http-title" output="403 Forbidden"><elem key="title">403 Forbidden</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="ssl-cert" output="Subject: commonName=media.prodb.com.br&#xa;Subject Alternative Name: DNS:acesso4.infopack.com.br, DNS:dorpa.pass.cloud.prodb.com.br, DNS:drive.cloud.prodb.com.br, DNS:ifs02.prodb.com.br, DNS:ifs05.prodb.com.br, DNS:ifs06.prodb.com.br, DNS:ifs12.prodb.com.br, DNS:infopack.prodb.com.br, DNS:media.prodb.com.br, DNS:medical.cloud.prodb.com.br, DNS:office.medical.cloud.prodb.com.br, DNS:passwr.cloud.prodb.com.br, DNS:procloud.prodb.com.br, DNS:soa.prodb.com.br, DNS:testeserv1.sistemaadcom.com.br, DNS:wrealty.prodb.com.br&#xa;Not valid before: 2026-06-20T05:19:27&#xa;Not valid after:  2026-09-18T05:19:26"><table key="subject">
+<elem key="commonName">media.prodb.com.br</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">YR1</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">C0D0FF939C3E31E910FD6990E7B37DF0E1E326AA6457FF215F0D196F2D069D35D8757A42504ABC92A2FA50A8AFA734F44151EACCFFEA6E188D15BDBF6E31AAAA751DDF98983FD300394B16E36EB8BD36B802E4335CB823EBEB7D36C97C0DAA0CE43DF2FC27F5AC04E3030C8599BE1DE0C0CCFBD478ABA47BB7C4520646652B7061FC2AB33BE42EC9EE92C011591D25AA74041195CBC58FE42E427F12C683CAB7F8A3C4A54C054922E578FCBA9BE5C79F0289EB7FD18712210948480B4F071CE8E464CF5B587B895E68260E7DCBC69077A2D5C13AE664432BAB50B82872709A59B8ECBEE1DABFC96206D3FA1D7258EFF8A9AB9BBEE15C0DA2DE020A85B0568A37</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">D2:0D:4A:C0:20:C5:AB:24:FA:E8:B1:66:60:DE:EA:F3:52:98:F2:43</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">1F:2F:35:BE:46:14:82:CD:40:B1:AE:79:2C:55:78:FA:F7:D4:68:FB</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:http://yr1.i.lencr.org/</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:acesso4.infopack.com.br, DNS:dorpa.pass.cloud.prodb.com.br, DNS:drive.cloud.prodb.com.br, DNS:ifs02.prodb.com.br, DNS:ifs05.prodb.com.br, DNS:ifs06.prodb.com.br, DNS:ifs12.prodb.com.br, DNS:infopack.prodb.com.br, DNS:media.prodb.com.br, DNS:medical.cloud.prodb.com.br, DNS:office.medical.cloud.prodb.com.br, DNS:passwr.cloud.prodb.com.br, DNS:procloud.prodb.com.br, DNS:soa.prodb.com.br, DNS:testeserv1.sistemaadcom.com.br, DNS:wrealty.prodb.com.br</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://yr1.c.lencr.org/1.crl&#xa;</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : D7:6D:7D:10:D1:A7:F5:77:C2:C7:E9:5F:D7:00:BF:F9:&#xa;                82:C9:33:5A:65:E1:D0:B3:01:73:17:C0:C8:C5:69:77&#xa;    Timestamp : Jun 20 06:17:57.146 2026 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:FB:50:A7:41:18:EF:EE:AE:BD:F9:86:&#xa;                A0:8A:4C:9B:93:AA:7B:FE:D6:A1:D9:41:46:A8:7C:1F:&#xa;                B1:04:71:4D:89:02:21:00:97:A2:C0:59:0F:DF:99:F8:&#xa;                61:32:5E:D2:04:F2:ED:A8:71:07:E6:DB:34:83:AF:40:&#xa;                4C:31:9E:A1:4B:0F:EF:D4&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 1A:8B:9D:6B:0F:FE:BF:81:B4:79:39:C6:D2:31:0A:86:&#xa;                D6:D1:02:D4:F0:46:E2:18:2C:9D:E3:5F:5E:26:25:EF&#xa;    Timestamp : Jun 20 06:17:57.701 2026 GMT&#xa;    Extensions: 00:00:05:00:21:0B:6B:C2&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:05:62:C9:B6:2A:0A:A9:BA:EA:57:D4:CF:&#xa;                99:B4:44:A0:3E:2B:03:FF:73:0E:14:23:D0:22:FA:96:&#xa;                57:11:26:25:02:21:00:F3:70:4F:E6:48:3A:CE:37:B8:&#xa;                1E:F0:9F:90:70:9E:FE:1B:14:41:01:8A:28:CA:CA:18:&#xa;                6E:2E:E7:81:66:AF:08</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2026-06-20T05:19:27</elem>
+<elem key="notAfter">2026-09-18T05:19:26</elem>
+</table>
+<elem key="md5">fec2680a332eef9b48b1b25343b963ee</elem>
+<elem key="sha1">6523e4132460e2312c06239198cdb212ff083f22</elem>
+<elem key="sha256">c59b6f2bb61878feba93e0476cc890b563b06693cffeea05bc2dca7e0639a1c8</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIGdjCCBV6gAwIBAgISBV/7NkXjAWgQRLPZfHDI0T8AMA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNZUjEwHhcNMjYwNjIwMDUxOTI3WhcNMjYwOTE4MDUxOTI2WjAdMRswGQYDVQQD&#xa;ExJtZWRpYS5wcm9kYi5jb20uYnIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK&#xa;AoIBAQDA0P+TnD4x6RD9aZDns33w4eMmqmRX/yFfDRlvLQadNdh1ekJQSrySovpQ&#xa;qK+nNPRBUerM/+puGI0Vvb9uMaqqdR3fmJg/0wA5Sxbjbri9NrgC5DNcuCPr6302&#xa;yXwNqgzkPfL8J/WsBOMDDIWZvh3gwMz71HirpHu3xFIGRmUrcGH8KrM75C7J7pLA&#xa;EVkdJap0BBGVy8WP5C5CfxLGg8q3+KPEpUwFSSLlePy6m+XHnwKJ63/RhxIhCUhI&#xa;C08HHOjkZM9bWHuJXmgmDn3LxpB3otXBOuZkQyurULgocnCaWbjsvuHav8liBtP6&#xa;HXJY7/ipq5u+4VwNot4CCoWwVoo3AgMBAAGjggOYMIIDlDAOBgNVHQ8BAf8EBAMC&#xa;BaAwEwYDVR0lBAwwCgYIKwYBBQUHAwEwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQU&#xa;0g1KwCDFqyT66LFmYN7q81KY8kMwHwYDVR0jBBgwFoAUHy81vkYUgs1Asa55LFV4&#xa;+vfUaPswMwYIKwYBBQUHAQEEJzAlMCMGCCsGAQUFBzAChhdodHRwOi8veXIxLmku&#xa;bGVuY3Iub3JnLzCCAZMGA1UdEQSCAYowggGGghdhY2Vzc280LmluZm9wYWNrLmNv&#xa;bS5icoIdZG9ycGEucGFzcy5jbG91ZC5wcm9kYi5jb20uYnKCGGRyaXZlLmNsb3Vk&#xa;LnByb2RiLmNvbS5icoISaWZzMDIucHJvZGIuY29tLmJyghJpZnMwNS5wcm9kYi5j&#xa;b20uYnKCEmlmczA2LnByb2RiLmNvbS5icoISaWZzMTIucHJvZGIuY29tLmJyghVp&#xa;bmZvcGFjay5wcm9kYi5jb20uYnKCEm1lZGlhLnByb2RiLmNvbS5icoIabWVkaWNh&#xa;bC5jbG91ZC5wcm9kYi5jb20uYnKCIW9mZmljZS5tZWRpY2FsLmNsb3VkLnByb2Ri&#xa;LmNvbS5icoIZcGFzc3dyLmNsb3VkLnByb2RiLmNvbS5icoIVcHJvY2xvdWQucHJv&#xa;ZGIuY29tLmJyghBzb2EucHJvZGIuY29tLmJygh50ZXN0ZXNlcnYxLnNpc3RlbWFh&#xa;ZGNvbS5jb20uYnKCFHdyZWFsdHkucHJvZGIuY29tLmJyMBMGA1UdIAQMMAowCAYG&#xa;Z4EMAQIBMC0GA1UdHwQmMCQwIqAgoB6GHGh0dHA6Ly95cjEuYy5sZW5jci5vcmcv&#xa;MS5jcmwwggENBgorBgEEAdZ5AgQCBIH+BIH7APkAdwDXbX0Q0af1d8LH6V/XAL/5&#xa;gskzWmXh0LMBcxfAyMVpdwAAAZ7jrcaaAAAEAwBIMEYCIQD7UKdBGO/urr35hqCK&#xa;TJuTqnv+1qHZQUaofB+xBHFNiQIhAJeiwFkP35n4YTJe0gTy7ahxB+bbNIOvQEwx&#xa;nqFLD+/UAH4AGoudaw/+v4G0eTnG0jEKhtbRAtTwRuIYLJ3jX14mJe8AAAGe463I&#xa;xQAIAAAFACELa8IEAwBHMEUCIAViybYqCqm66lfUz5m0RKA+KwP/cw4UI9Ai+pZX&#xa;ESYlAiEA83BP5kg6zje4HvCfkHCe/hsUQQGKKMrKGG4u54FmrwgwDQYJKoZIhvcN&#xa;AQELBQADggEBADae7Cg1pyLPvjGMNbzSm84aEDnV9W4CkvzqDdjh2D/DWuTw7EaN&#xa;MZbCW/Iq9K3hTvJ7jscqEyov/hMIPvn7vGgFiOKGKgdM2pFwaFmksu3YvjBiZomo&#xa;48NKY8t/N93DRFYtoZtlWURqta7IkF9vIGbhh0M3EDRoRQohiilB20UXvHAjykFS&#xa;Oi+q/3/tPYzPkukPo/QK3ltzjrjdRzhzwlfBt5/GjJRlG+uKbsQY32b0Zh52C20L&#xa;+HsNliRXCVbiycaOB5WSnJVhKrj5tllDeYfl+zOIKNXYSRB35jgcYk4iyrZp0+Ig&#xa;ebZGVAbFIS7h02/PV+A91kUOUZI6u6ywYq0=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="1194"><state state="open" reason="syn-ack" reason_ttl="56"/><service name="openvpn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1195"><state state="open" reason="syn-ack" reason_ttl="56"/><service name="rsf-1" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3001"><state state="open" reason="syn-ack" reason_ttl="56"/><service name="nessus" method="table" conf="3"/><script id="tls-alpn" output="&#xa;  h2&#xa;  http/1.1"><elem>h2</elem>
+<elem>http/1.1</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="ssl-cert" output="Subject: commonName=rootermedical.cloud.prodb.com.br&#xa;Subject Alternative Name: DNS:remoto.rooter.cloud.prodb.com.br, DNS:rootermedical.cloud.prodb.com.br&#xa;Not valid before: 2026-07-29T02:19:57&#xa;Not valid after:  2026-10-27T02:19:56"><table key="subject">
+<elem key="commonName">rootermedical.cloud.prodb.com.br</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">YR1</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">AD494B66BDB78A7C14215E7E2AFBB8E5A720F05D58BEC9BDEEF940823F214D50573B1855960003AA7EB75DDDB9D8AC402F37567ACC147B75C73D30F82EF3211D466D29D78A53B9B1670BACF3E91E8747E3DB5D18B7EB167B8C6B572CF72056CAFE55491116310E0A55C3DBA7EC129983151318B200A982DC70DDDF26D4A9290A3228E72CEA34372370AC627AE820D622A07CA36CA4488FA5FA726A532F916712477E0A75B0DA72C70EC76B1DC4DBD9078B89A3F87FB5AB88C0936B9EC4D5B6C2A8D408B4B9DE2069643939A8BB778209AFE19EB6CE1B7684D8EEF3B8B7753A939476CD3A743154DCF511DD2A3BFD137D914BEFE7EEDD450A7F6A55F010FEA5B9</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">B8:52:40:F0:C2:94:6D:A9:92:CF:15:CC:13:F5:77:AA:FC:9C:69:9C</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">1F:2F:35:BE:46:14:82:CD:40:B1:AE:79:2C:55:78:FA:F7:D4:68:FB</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:http://yr1.i.lencr.org/</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:remoto.rooter.cloud.prodb.com.br, DNS:rootermedical.cloud.prodb.com.br</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://yr1.c.lencr.org/73.crl&#xa;</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : CB:38:F7:15:89:7C:84:A1:44:5F:5B:C1:DD:FB:C9:6E:&#xa;                F2:9A:59:CD:47:0A:69:05:85:B0:CB:14:C3:14:58:E7&#xa;    Timestamp : Jul 29 03:18:27.759 2026 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:F8:9E:E5:7C:BE:25:C4:DB:6B:97:16:&#xa;                1D:E0:4C:A4:E1:BC:05:3D:30:27:DA:4A:94:8A:1E:AB:&#xa;                E8:F4:63:3C:13:02:21:00:EA:88:03:EC:B2:BF:98:1F:&#xa;                82:E8:F2:C9:30:C5:A6:91:50:CC:8F:12:1D:9F:A3:4E:&#xa;                AD:53:8C:9D:CF:2C:D9:B6&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : A8:26:CB:E3:0A:C6:35:12:46:53:3F:E0:65:F1:4F:19:&#xa;                D9:6E:19:08:13:C4:1D:D9:6D:79:00:B3:12:3C:55:27&#xa;    Timestamp : Jul 29 03:18:28.653 2026 GMT&#xa;    Extensions: 00:00:05:00:16:E7:09:CA&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:92:4A:39:50:D8:7A:88:59:25:E2:B2:&#xa;                12:35:66:99:74:50:73:3E:0D:A8:F0:D2:A0:38:DD:38:&#xa;                06:DD:A1:27:06:02:20:01:FB:02:31:BD:7A:1E:4A:4E:&#xa;                46:8D:A7:BA:9B:76:26:B2:E8:94:3D:92:B4:31:4B:BE:&#xa;                E9:1F:27:AE:BC:71:F2</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2026-07-29T02:19:57</elem>
+<elem key="notAfter">2026-10-27T02:19:56</elem>
+</table>
+<elem key="md5">00b47ef9b8ade86de252e972fe57642b</elem>
+<elem key="sha1">33046fda551af51ca2e1bdb9de230ce22e815e78</elem>
+<elem key="sha256">f1aad0a7851f0a11db700cf24c20cf82b928fd4f1ac86beeb78c6a100b80eb17</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFPTCCBCWgAwIBAgISBlcV4WtxC2Sp90oPccmyx7XIMA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNZUjEwHhcNMjYwNzI5MDIxOTU3WhcNMjYxMDI3MDIxOTU2WjArMSkwJwYDVQQD&#xa;EyByb290ZXJtZWRpY2FsLmNsb3VkLnByb2RiLmNvbS5icjCCASIwDQYJKoZIhvcN&#xa;AQEBBQADggEPADCCAQoCggEBAK1JS2a9t4p8FCFefir7uOWnIPBdWL7Jve75QII/&#xa;IU1QVzsYVZYAA6p+t13dudisQC83VnrMFHt1xz0w+C7zIR1GbSnXilO5sWcLrPPp&#xa;HodH49tdGLfrFnuMa1cs9yBWyv5VSREWMQ4KVcPbp+wSmYMVExiyAKmC3HDd3ybU&#xa;qSkKMijnLOo0NyNwrGJ66CDWIqB8o2ykSI+l+nJqUy+RZxJHfgp1sNpyxw7Hax3E&#xa;29kHi4mj+H+1q4jAk2uexNW2wqjUCLS53iBpZDk5qLt3ggmv4Z62zht2hNju87i3&#xa;dTqTlHbNOnQxVNz1Ed0qO/0TfZFL7+fu3UUKf2pV8BD+pbkCAwEAAaOCAlEwggJN&#xa;MA4GA1UdDwEB/wQEAwIFoDATBgNVHSUEDDAKBggrBgEFBQcDATAMBgNVHRMBAf8E&#xa;AjAAMB0GA1UdDgQWBBS4UkDwwpRtqZLPFcwT9Xeq/JxpnDAfBgNVHSMEGDAWgBQf&#xa;LzW+RhSCzUCxrnksVXj699Ro+zAzBggrBgEFBQcBAQQnMCUwIwYIKwYBBQUHMAKG&#xa;F2h0dHA6Ly95cjEuaS5sZW5jci5vcmcvME0GA1UdEQRGMESCIHJlbW90by5yb290&#xa;ZXIuY2xvdWQucHJvZGIuY29tLmJygiByb290ZXJtZWRpY2FsLmNsb3VkLnByb2Ri&#xa;LmNvbS5icjATBgNVHSAEDDAKMAgGBmeBDAECATAuBgNVHR8EJzAlMCOgIaAfhh1o&#xa;dHRwOi8veXIxLmMubGVuY3Iub3JnLzczLmNybDCCAQ0GCisGAQQB1nkCBAIEgf4E&#xa;gfsA+QB3AMs49xWJfIShRF9bwd37yW7ymlnNRwppBYWwyxTDFFjnAAABn6vhdq8A&#xa;AAQDAEgwRgIhAPie5Xy+JcTba5cWHeBMpOG8BT0wJ9pKlIoeq+j0YzwTAiEA6ogD&#xa;7LK/mB+C6PLJMMWmkVDMjxIdn6NOrVOMnc8s2bYAfgCoJsvjCsY1EkZTP+Bl8U8Z&#xa;2W4ZCBPEHdlteQCzEjxVJwAAAZ+r4XotAAgAAAUAFucJygQDAEcwRQIhAJJKOVDY&#xa;eohZJeKyEjVmmXRQcz4NqPDSoDjdOAbdoScGAiAB+wIxvXoeSk5Gjae6m3YmsuiU&#xa;PZK0MUu+6R8nrrxx8jANBgkqhkiG9w0BAQsFAAOCAQEAhyslX+UbC5vBdyLKBQKX&#xa;0pTkAshz7rgtiBKHinRxCtXf7YJ1+qCpKci0QQckYxaQ9wdx4n1VAZc0LuXLdON8&#xa;fSGEsrJ8EkYBMwCfhcMT0IKnXxHU1xZJ24qIjpYX1pqsnR0Eq/eflMQ9hKPj4GnJ&#xa;g8nEBha2erCE7WiDykxusKpDa8+UuRdrh3YyjQ5NT7Hix+csJ4jOKcrWmLZ6niM5&#xa;myQJhqlZTmzgfl1+sTnS7sDbm7zNB+A83qeGQKnydIRMdC95/Q3yTsiv0+y5QJZX&#xa;B0Vf0viQncj2bD1nwDE9KxolETY/sCqmzpK9kPoo5Aut/JFx/WlF27LZc8/N3mbe&#xa;mg==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="3333"><state state="open" reason="syn-ack" reason_ttl="56"/><service name="dec-notes" method="table" conf="3"/><script id="tls-alpn" output="&#xa;  h2&#xa;  http/1.1"><elem>h2</elem>
+<elem>http/1.1</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="ssl-cert" output="Subject: commonName=rootermedical.cloud.prodb.com.br&#xa;Subject Alternative Name: DNS:remoto.rooter.cloud.prodb.com.br, DNS:rootermedical.cloud.prodb.com.br&#xa;Not valid before: 2026-07-29T02:19:57&#xa;Not valid after:  2026-10-27T02:19:56"><table key="subject">
+<elem key="commonName">rootermedical.cloud.prodb.com.br</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">YR1</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">AD494B66BDB78A7C14215E7E2AFBB8E5A720F05D58BEC9BDEEF940823F214D50573B1855960003AA7EB75DDDB9D8AC402F37567ACC147B75C73D30F82EF3211D466D29D78A53B9B1670BACF3E91E8747E3DB5D18B7EB167B8C6B572CF72056CAFE55491116310E0A55C3DBA7EC129983151318B200A982DC70DDDF26D4A9290A3228E72CEA34372370AC627AE820D622A07CA36CA4488FA5FA726A532F916712477E0A75B0DA72C70EC76B1DC4DBD9078B89A3F87FB5AB88C0936B9EC4D5B6C2A8D408B4B9DE2069643939A8BB778209AFE19EB6CE1B7684D8EEF3B8B7753A939476CD3A743154DCF511DD2A3BFD137D914BEFE7EEDD450A7F6A55F010FEA5B9</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">B8:52:40:F0:C2:94:6D:A9:92:CF:15:CC:13:F5:77:AA:FC:9C:69:9C</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">1F:2F:35:BE:46:14:82:CD:40:B1:AE:79:2C:55:78:FA:F7:D4:68:FB</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:http://yr1.i.lencr.org/</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:remoto.rooter.cloud.prodb.com.br, DNS:rootermedical.cloud.prodb.com.br</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://yr1.c.lencr.org/73.crl&#xa;</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : CB:38:F7:15:89:7C:84:A1:44:5F:5B:C1:DD:FB:C9:6E:&#xa;                F2:9A:59:CD:47:0A:69:05:85:B0:CB:14:C3:14:58:E7&#xa;    Timestamp : Jul 29 03:18:27.759 2026 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:F8:9E:E5:7C:BE:25:C4:DB:6B:97:16:&#xa;                1D:E0:4C:A4:E1:BC:05:3D:30:27:DA:4A:94:8A:1E:AB:&#xa;                E8:F4:63:3C:13:02:21:00:EA:88:03:EC:B2:BF:98:1F:&#xa;                82:E8:F2:C9:30:C5:A6:91:50:CC:8F:12:1D:9F:A3:4E:&#xa;                AD:53:8C:9D:CF:2C:D9:B6&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : A8:26:CB:E3:0A:C6:35:12:46:53:3F:E0:65:F1:4F:19:&#xa;                D9:6E:19:08:13:C4:1D:D9:6D:79:00:B3:12:3C:55:27&#xa;    Timestamp : Jul 29 03:18:28.653 2026 GMT&#xa;    Extensions: 00:00:05:00:16:E7:09:CA&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:92:4A:39:50:D8:7A:88:59:25:E2:B2:&#xa;                12:35:66:99:74:50:73:3E:0D:A8:F0:D2:A0:38:DD:38:&#xa;                06:DD:A1:27:06:02:20:01:FB:02:31:BD:7A:1E:4A:4E:&#xa;                46:8D:A7:BA:9B:76:26:B2:E8:94:3D:92:B4:31:4B:BE:&#xa;                E9:1F:27:AE:BC:71:F2</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2026-07-29T02:19:57</elem>
+<elem key="notAfter">2026-10-27T02:19:56</elem>
+</table>
+<elem key="md5">00b47ef9b8ade86de252e972fe57642b</elem>
+<elem key="sha1">33046fda551af51ca2e1bdb9de230ce22e815e78</elem>
+<elem key="sha256">f1aad0a7851f0a11db700cf24c20cf82b928fd4f1ac86beeb78c6a100b80eb17</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFPTCCBCWgAwIBAgISBlcV4WtxC2Sp90oPccmyx7XIMA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNZUjEwHhcNMjYwNzI5MDIxOTU3WhcNMjYxMDI3MDIxOTU2WjArMSkwJwYDVQQD&#xa;EyByb290ZXJtZWRpY2FsLmNsb3VkLnByb2RiLmNvbS5icjCCASIwDQYJKoZIhvcN&#xa;AQEBBQADggEPADCCAQoCggEBAK1JS2a9t4p8FCFefir7uOWnIPBdWL7Jve75QII/&#xa;IU1QVzsYVZYAA6p+t13dudisQC83VnrMFHt1xz0w+C7zIR1GbSnXilO5sWcLrPPp&#xa;HodH49tdGLfrFnuMa1cs9yBWyv5VSREWMQ4KVcPbp+wSmYMVExiyAKmC3HDd3ybU&#xa;qSkKMijnLOo0NyNwrGJ66CDWIqB8o2ykSI+l+nJqUy+RZxJHfgp1sNpyxw7Hax3E&#xa;29kHi4mj+H+1q4jAk2uexNW2wqjUCLS53iBpZDk5qLt3ggmv4Z62zht2hNju87i3&#xa;dTqTlHbNOnQxVNz1Ed0qO/0TfZFL7+fu3UUKf2pV8BD+pbkCAwEAAaOCAlEwggJN&#xa;MA4GA1UdDwEB/wQEAwIFoDATBgNVHSUEDDAKBggrBgEFBQcDATAMBgNVHRMBAf8E&#xa;AjAAMB0GA1UdDgQWBBS4UkDwwpRtqZLPFcwT9Xeq/JxpnDAfBgNVHSMEGDAWgBQf&#xa;LzW+RhSCzUCxrnksVXj699Ro+zAzBggrBgEFBQcBAQQnMCUwIwYIKwYBBQUHMAKG&#xa;F2h0dHA6Ly95cjEuaS5sZW5jci5vcmcvME0GA1UdEQRGMESCIHJlbW90by5yb290&#xa;ZXIuY2xvdWQucHJvZGIuY29tLmJygiByb290ZXJtZWRpY2FsLmNsb3VkLnByb2Ri&#xa;LmNvbS5icjATBgNVHSAEDDAKMAgGBmeBDAECATAuBgNVHR8EJzAlMCOgIaAfhh1o&#xa;dHRwOi8veXIxLmMubGVuY3Iub3JnLzczLmNybDCCAQ0GCisGAQQB1nkCBAIEgf4E&#xa;gfsA+QB3AMs49xWJfIShRF9bwd37yW7ymlnNRwppBYWwyxTDFFjnAAABn6vhdq8A&#xa;AAQDAEgwRgIhAPie5Xy+JcTba5cWHeBMpOG8BT0wJ9pKlIoeq+j0YzwTAiEA6ogD&#xa;7LK/mB+C6PLJMMWmkVDMjxIdn6NOrVOMnc8s2bYAfgCoJsvjCsY1EkZTP+Bl8U8Z&#xa;2W4ZCBPEHdlteQCzEjxVJwAAAZ+r4XotAAgAAAUAFucJygQDAEcwRQIhAJJKOVDY&#xa;eohZJeKyEjVmmXRQcz4NqPDSoDjdOAbdoScGAiAB+wIxvXoeSk5Gjae6m3YmsuiU&#xa;PZK0MUu+6R8nrrxx8jANBgkqhkiG9w0BAQsFAAOCAQEAhyslX+UbC5vBdyLKBQKX&#xa;0pTkAshz7rgtiBKHinRxCtXf7YJ1+qCpKci0QQckYxaQ9wdx4n1VAZc0LuXLdON8&#xa;fSGEsrJ8EkYBMwCfhcMT0IKnXxHU1xZJ24qIjpYX1pqsnR0Eq/eflMQ9hKPj4GnJ&#xa;g8nEBha2erCE7WiDykxusKpDa8+UuRdrh3YyjQ5NT7Hix+csJ4jOKcrWmLZ6niM5&#xa;myQJhqlZTmzgfl1+sTnS7sDbm7zNB+A83qeGQKnydIRMdC95/Q3yTsiv0+y5QJZX&#xa;B0Vf0viQncj2bD1nwDE9KxolETY/sCqmzpK9kPoo5Aut/JFx/WlF27LZc8/N3mbe&#xa;mg==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="3335"><state state="open" reason="syn-ack" reason_ttl="56"/><service name="directv-soft" method="table" conf="3"/><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="ssl-cert" output="Subject: commonName=rootermedical.cloud.prodb.com.br&#xa;Subject Alternative Name: DNS:remoto.rooter.cloud.prodb.com.br, DNS:rootermedical.cloud.prodb.com.br&#xa;Not valid before: 2026-07-29T02:19:57&#xa;Not valid after:  2026-10-27T02:19:56"><table key="subject">
+<elem key="commonName">rootermedical.cloud.prodb.com.br</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">YR1</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">AD494B66BDB78A7C14215E7E2AFBB8E5A720F05D58BEC9BDEEF940823F214D50573B1855960003AA7EB75DDDB9D8AC402F37567ACC147B75C73D30F82EF3211D466D29D78A53B9B1670BACF3E91E8747E3DB5D18B7EB167B8C6B572CF72056CAFE55491116310E0A55C3DBA7EC129983151318B200A982DC70DDDF26D4A9290A3228E72CEA34372370AC627AE820D622A07CA36CA4488FA5FA726A532F916712477E0A75B0DA72C70EC76B1DC4DBD9078B89A3F87FB5AB88C0936B9EC4D5B6C2A8D408B4B9DE2069643939A8BB778209AFE19EB6CE1B7684D8EEF3B8B7753A939476CD3A743154DCF511DD2A3BFD137D914BEFE7EEDD450A7F6A55F010FEA5B9</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">B8:52:40:F0:C2:94:6D:A9:92:CF:15:CC:13:F5:77:AA:FC:9C:69:9C</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">1F:2F:35:BE:46:14:82:CD:40:B1:AE:79:2C:55:78:FA:F7:D4:68:FB</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:http://yr1.i.lencr.org/</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:remoto.rooter.cloud.prodb.com.br, DNS:rootermedical.cloud.prodb.com.br</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://yr1.c.lencr.org/73.crl&#xa;</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : CB:38:F7:15:89:7C:84:A1:44:5F:5B:C1:DD:FB:C9:6E:&#xa;                F2:9A:59:CD:47:0A:69:05:85:B0:CB:14:C3:14:58:E7&#xa;    Timestamp : Jul 29 03:18:27.759 2026 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:F8:9E:E5:7C:BE:25:C4:DB:6B:97:16:&#xa;                1D:E0:4C:A4:E1:BC:05:3D:30:27:DA:4A:94:8A:1E:AB:&#xa;                E8:F4:63:3C:13:02:21:00:EA:88:03:EC:B2:BF:98:1F:&#xa;                82:E8:F2:C9:30:C5:A6:91:50:CC:8F:12:1D:9F:A3:4E:&#xa;                AD:53:8C:9D:CF:2C:D9:B6&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : A8:26:CB:E3:0A:C6:35:12:46:53:3F:E0:65:F1:4F:19:&#xa;                D9:6E:19:08:13:C4:1D:D9:6D:79:00:B3:12:3C:55:27&#xa;    Timestamp : Jul 29 03:18:28.653 2026 GMT&#xa;    Extensions: 00:00:05:00:16:E7:09:CA&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:92:4A:39:50:D8:7A:88:59:25:E2:B2:&#xa;                12:35:66:99:74:50:73:3E:0D:A8:F0:D2:A0:38:DD:38:&#xa;                06:DD:A1:27:06:02:20:01:FB:02:31:BD:7A:1E:4A:4E:&#xa;                46:8D:A7:BA:9B:76:26:B2:E8:94:3D:92:B4:31:4B:BE:&#xa;                E9:1F:27:AE:BC:71:F2</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2026-07-29T02:19:57</elem>
+<elem key="notAfter">2026-10-27T02:19:56</elem>
+</table>
+<elem key="md5">00b47ef9b8ade86de252e972fe57642b</elem>
+<elem key="sha1">33046fda551af51ca2e1bdb9de230ce22e815e78</elem>
+<elem key="sha256">f1aad0a7851f0a11db700cf24c20cf82b928fd4f1ac86beeb78c6a100b80eb17</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFPTCCBCWgAwIBAgISBlcV4WtxC2Sp90oPccmyx7XIMA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNZUjEwHhcNMjYwNzI5MDIxOTU3WhcNMjYxMDI3MDIxOTU2WjArMSkwJwYDVQQD&#xa;EyByb290ZXJtZWRpY2FsLmNsb3VkLnByb2RiLmNvbS5icjCCASIwDQYJKoZIhvcN&#xa;AQEBBQADggEPADCCAQoCggEBAK1JS2a9t4p8FCFefir7uOWnIPBdWL7Jve75QII/&#xa;IU1QVzsYVZYAA6p+t13dudisQC83VnrMFHt1xz0w+C7zIR1GbSnXilO5sWcLrPPp&#xa;HodH49tdGLfrFnuMa1cs9yBWyv5VSREWMQ4KVcPbp+wSmYMVExiyAKmC3HDd3ybU&#xa;qSkKMijnLOo0NyNwrGJ66CDWIqB8o2ykSI+l+nJqUy+RZxJHfgp1sNpyxw7Hax3E&#xa;29kHi4mj+H+1q4jAk2uexNW2wqjUCLS53iBpZDk5qLt3ggmv4Z62zht2hNju87i3&#xa;dTqTlHbNOnQxVNz1Ed0qO/0TfZFL7+fu3UUKf2pV8BD+pbkCAwEAAaOCAlEwggJN&#xa;MA4GA1UdDwEB/wQEAwIFoDATBgNVHSUEDDAKBggrBgEFBQcDATAMBgNVHRMBAf8E&#xa;AjAAMB0GA1UdDgQWBBS4UkDwwpRtqZLPFcwT9Xeq/JxpnDAfBgNVHSMEGDAWgBQf&#xa;LzW+RhSCzUCxrnksVXj699Ro+zAzBggrBgEFBQcBAQQnMCUwIwYIKwYBBQUHMAKG&#xa;F2h0dHA6Ly95cjEuaS5sZW5jci5vcmcvME0GA1UdEQRGMESCIHJlbW90by5yb290&#xa;ZXIuY2xvdWQucHJvZGIuY29tLmJygiByb290ZXJtZWRpY2FsLmNsb3VkLnByb2Ri&#xa;LmNvbS5icjATBgNVHSAEDDAKMAgGBmeBDAECATAuBgNVHR8EJzAlMCOgIaAfhh1o&#xa;dHRwOi8veXIxLmMubGVuY3Iub3JnLzczLmNybDCCAQ0GCisGAQQB1nkCBAIEgf4E&#xa;gfsA+QB3AMs49xWJfIShRF9bwd37yW7ymlnNRwppBYWwyxTDFFjnAAABn6vhdq8A&#xa;AAQDAEgwRgIhAPie5Xy+JcTba5cWHeBMpOG8BT0wJ9pKlIoeq+j0YzwTAiEA6ogD&#xa;7LK/mB+C6PLJMMWmkVDMjxIdn6NOrVOMnc8s2bYAfgCoJsvjCsY1EkZTP+Bl8U8Z&#xa;2W4ZCBPEHdlteQCzEjxVJwAAAZ+r4XotAAgAAAUAFucJygQDAEcwRQIhAJJKOVDY&#xa;eohZJeKyEjVmmXRQcz4NqPDSoDjdOAbdoScGAiAB+wIxvXoeSk5Gjae6m3YmsuiU&#xa;PZK0MUu+6R8nrrxx8jANBgkqhkiG9w0BAQsFAAOCAQEAhyslX+UbC5vBdyLKBQKX&#xa;0pTkAshz7rgtiBKHinRxCtXf7YJ1+qCpKci0QQckYxaQ9wdx4n1VAZc0LuXLdON8&#xa;fSGEsrJ8EkYBMwCfhcMT0IKnXxHU1xZJ24qIjpYX1pqsnR0Eq/eflMQ9hKPj4GnJ&#xa;g8nEBha2erCE7WiDykxusKpDa8+UuRdrh3YyjQ5NT7Hix+csJ4jOKcrWmLZ6niM5&#xa;myQJhqlZTmzgfl1+sTnS7sDbm7zNB+A83qeGQKnydIRMdC95/Q3yTsiv0+y5QJZX&#xa;B0Vf0viQncj2bD1nwDE9KxolETY/sCqmzpK9kPoo5Aut/JFx/WlF27LZc8/N3mbe&#xa;mg==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="tls-alpn" output="&#xa;  h2&#xa;  http/1.1"><elem>h2</elem>
+<elem>http/1.1</elem>
+</script></port>
+<port protocol="tcp" portid="8015"><state state="open" reason="syn-ack" reason_ttl="56"/><service name="cfg-cloud" method="table" conf="3"/><script id="ssl-cert" output="Subject: commonName=media.prodb.com.br&#xa;Subject Alternative Name: DNS:acesso4.infopack.com.br, DNS:dorpa.pass.cloud.prodb.com.br, DNS:drive.cloud.prodb.com.br, DNS:ifs02.prodb.com.br, DNS:ifs05.prodb.com.br, DNS:ifs06.prodb.com.br, DNS:ifs12.prodb.com.br, DNS:infopack.prodb.com.br, DNS:media.prodb.com.br, DNS:medical.cloud.prodb.com.br, DNS:office.medical.cloud.prodb.com.br, DNS:passwr.cloud.prodb.com.br, DNS:procloud.prodb.com.br, DNS:soa.prodb.com.br, DNS:testeserv1.sistemaadcom.com.br, DNS:wrealty.prodb.com.br&#xa;Not valid before: 2026-06-20T05:19:27&#xa;Not valid after:  2026-09-18T05:19:26"><table key="subject">
+<elem key="commonName">media.prodb.com.br</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">YR1</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">C0D0FF939C3E31E910FD6990E7B37DF0E1E326AA6457FF215F0D196F2D069D35D8757A42504ABC92A2FA50A8AFA734F44151EACCFFEA6E188D15BDBF6E31AAAA751DDF98983FD300394B16E36EB8BD36B802E4335CB823EBEB7D36C97C0DAA0CE43DF2FC27F5AC04E3030C8599BE1DE0C0CCFBD478ABA47BB7C4520646652B7061FC2AB33BE42EC9EE92C011591D25AA74041195CBC58FE42E427F12C683CAB7F8A3C4A54C054922E578FCBA9BE5C79F0289EB7FD18712210948480B4F071CE8E464CF5B587B895E68260E7DCBC69077A2D5C13AE664432BAB50B82872709A59B8ECBEE1DABFC96206D3FA1D7258EFF8A9AB9BBEE15C0DA2DE020A85B0568A37</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">D2:0D:4A:C0:20:C5:AB:24:FA:E8:B1:66:60:DE:EA:F3:52:98:F2:43</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">1F:2F:35:BE:46:14:82:CD:40:B1:AE:79:2C:55:78:FA:F7:D4:68:FB</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:http://yr1.i.lencr.org/</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:acesso4.infopack.com.br, DNS:dorpa.pass.cloud.prodb.com.br, DNS:drive.cloud.prodb.com.br, DNS:ifs02.prodb.com.br, DNS:ifs05.prodb.com.br, DNS:ifs06.prodb.com.br, DNS:ifs12.prodb.com.br, DNS:infopack.prodb.com.br, DNS:media.prodb.com.br, DNS:medical.cloud.prodb.com.br, DNS:office.medical.cloud.prodb.com.br, DNS:passwr.cloud.prodb.com.br, DNS:procloud.prodb.com.br, DNS:soa.prodb.com.br, DNS:testeserv1.sistemaadcom.com.br, DNS:wrealty.prodb.com.br</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://yr1.c.lencr.org/1.crl&#xa;</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : D7:6D:7D:10:D1:A7:F5:77:C2:C7:E9:5F:D7:00:BF:F9:&#xa;                82:C9:33:5A:65:E1:D0:B3:01:73:17:C0:C8:C5:69:77&#xa;    Timestamp : Jun 20 06:17:57.146 2026 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:FB:50:A7:41:18:EF:EE:AE:BD:F9:86:&#xa;                A0:8A:4C:9B:93:AA:7B:FE:D6:A1:D9:41:46:A8:7C:1F:&#xa;                B1:04:71:4D:89:02:21:00:97:A2:C0:59:0F:DF:99:F8:&#xa;                61:32:5E:D2:04:F2:ED:A8:71:07:E6:DB:34:83:AF:40:&#xa;                4C:31:9E:A1:4B:0F:EF:D4&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 1A:8B:9D:6B:0F:FE:BF:81:B4:79:39:C6:D2:31:0A:86:&#xa;                D6:D1:02:D4:F0:46:E2:18:2C:9D:E3:5F:5E:26:25:EF&#xa;    Timestamp : Jun 20 06:17:57.701 2026 GMT&#xa;    Extensions: 00:00:05:00:21:0B:6B:C2&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:05:62:C9:B6:2A:0A:A9:BA:EA:57:D4:CF:&#xa;                99:B4:44:A0:3E:2B:03:FF:73:0E:14:23:D0:22:FA:96:&#xa;                57:11:26:25:02:21:00:F3:70:4F:E6:48:3A:CE:37:B8:&#xa;                1E:F0:9F:90:70:9E:FE:1B:14:41:01:8A:28:CA:CA:18:&#xa;                6E:2E:E7:81:66:AF:08</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2026-06-20T05:19:27</elem>
+<elem key="notAfter">2026-09-18T05:19:26</elem>
+</table>
+<elem key="md5">fec2680a332eef9b48b1b25343b963ee</elem>
+<elem key="sha1">6523e4132460e2312c06239198cdb212ff083f22</elem>
+<elem key="sha256">c59b6f2bb61878feba93e0476cc890b563b06693cffeea05bc2dca7e0639a1c8</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIGdjCCBV6gAwIBAgISBV/7NkXjAWgQRLPZfHDI0T8AMA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNZUjEwHhcNMjYwNjIwMDUxOTI3WhcNMjYwOTE4MDUxOTI2WjAdMRswGQYDVQQD&#xa;ExJtZWRpYS5wcm9kYi5jb20uYnIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK&#xa;AoIBAQDA0P+TnD4x6RD9aZDns33w4eMmqmRX/yFfDRlvLQadNdh1ekJQSrySovpQ&#xa;qK+nNPRBUerM/+puGI0Vvb9uMaqqdR3fmJg/0wA5Sxbjbri9NrgC5DNcuCPr6302&#xa;yXwNqgzkPfL8J/WsBOMDDIWZvh3gwMz71HirpHu3xFIGRmUrcGH8KrM75C7J7pLA&#xa;EVkdJap0BBGVy8WP5C5CfxLGg8q3+KPEpUwFSSLlePy6m+XHnwKJ63/RhxIhCUhI&#xa;C08HHOjkZM9bWHuJXmgmDn3LxpB3otXBOuZkQyurULgocnCaWbjsvuHav8liBtP6&#xa;HXJY7/ipq5u+4VwNot4CCoWwVoo3AgMBAAGjggOYMIIDlDAOBgNVHQ8BAf8EBAMC&#xa;BaAwEwYDVR0lBAwwCgYIKwYBBQUHAwEwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQU&#xa;0g1KwCDFqyT66LFmYN7q81KY8kMwHwYDVR0jBBgwFoAUHy81vkYUgs1Asa55LFV4&#xa;+vfUaPswMwYIKwYBBQUHAQEEJzAlMCMGCCsGAQUFBzAChhdodHRwOi8veXIxLmku&#xa;bGVuY3Iub3JnLzCCAZMGA1UdEQSCAYowggGGghdhY2Vzc280LmluZm9wYWNrLmNv&#xa;bS5icoIdZG9ycGEucGFzcy5jbG91ZC5wcm9kYi5jb20uYnKCGGRyaXZlLmNsb3Vk&#xa;LnByb2RiLmNvbS5icoISaWZzMDIucHJvZGIuY29tLmJyghJpZnMwNS5wcm9kYi5j&#xa;b20uYnKCEmlmczA2LnByb2RiLmNvbS5icoISaWZzMTIucHJvZGIuY29tLmJyghVp&#xa;bmZvcGFjay5wcm9kYi5jb20uYnKCEm1lZGlhLnByb2RiLmNvbS5icoIabWVkaWNh&#xa;bC5jbG91ZC5wcm9kYi5jb20uYnKCIW9mZmljZS5tZWRpY2FsLmNsb3VkLnByb2Ri&#xa;LmNvbS5icoIZcGFzc3dyLmNsb3VkLnByb2RiLmNvbS5icoIVcHJvY2xvdWQucHJv&#xa;ZGIuY29tLmJyghBzb2EucHJvZGIuY29tLmJygh50ZXN0ZXNlcnYxLnNpc3RlbWFh&#xa;ZGNvbS5jb20uYnKCFHdyZWFsdHkucHJvZGIuY29tLmJyMBMGA1UdIAQMMAowCAYG&#xa;Z4EMAQIBMC0GA1UdHwQmMCQwIqAgoB6GHGh0dHA6Ly95cjEuYy5sZW5jci5vcmcv&#xa;MS5jcmwwggENBgorBgEEAdZ5AgQCBIH+BIH7APkAdwDXbX0Q0af1d8LH6V/XAL/5&#xa;gskzWmXh0LMBcxfAyMVpdwAAAZ7jrcaaAAAEAwBIMEYCIQD7UKdBGO/urr35hqCK&#xa;TJuTqnv+1qHZQUaofB+xBHFNiQIhAJeiwFkP35n4YTJe0gTy7ahxB+bbNIOvQEwx&#xa;nqFLD+/UAH4AGoudaw/+v4G0eTnG0jEKhtbRAtTwRuIYLJ3jX14mJe8AAAGe463I&#xa;xQAIAAAFACELa8IEAwBHMEUCIAViybYqCqm66lfUz5m0RKA+KwP/cw4UI9Ai+pZX&#xa;ESYlAiEA83BP5kg6zje4HvCfkHCe/hsUQQGKKMrKGG4u54FmrwgwDQYJKoZIhvcN&#xa;AQELBQADggEBADae7Cg1pyLPvjGMNbzSm84aEDnV9W4CkvzqDdjh2D/DWuTw7EaN&#xa;MZbCW/Iq9K3hTvJ7jscqEyov/hMIPvn7vGgFiOKGKgdM2pFwaFmksu3YvjBiZomo&#xa;48NKY8t/N93DRFYtoZtlWURqta7IkF9vIGbhh0M3EDRoRQohiilB20UXvHAjykFS&#xa;Oi+q/3/tPYzPkukPo/QK3ltzjrjdRzhzwlfBt5/GjJRlG+uKbsQY32b0Zh52C20L&#xa;+HsNliRXCVbiycaOB5WSnJVhKrj5tllDeYfl+zOIKNXYSRB35jgcYk4iyrZp0+Ig&#xa;ebZGVAbFIS7h02/PV+A91kUOUZI6u6ywYq0=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="tls-alpn" output="&#xa;  h2&#xa;  http/1.1"><elem>h2</elem>
+<elem>http/1.1</elem>
+</script></port>
+<port protocol="tcp" portid="8088"><state state="open" reason="syn-ack" reason_ttl="56"/><service name="radan-http" method="table" conf="3"/><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="ssl-cert" output="Subject: commonName=media.prodb.com.br&#xa;Subject Alternative Name: DNS:acesso4.infopack.com.br, DNS:dorpa.pass.cloud.prodb.com.br, DNS:drive.cloud.prodb.com.br, DNS:ifs02.prodb.com.br, DNS:ifs05.prodb.com.br, DNS:ifs06.prodb.com.br, DNS:ifs12.prodb.com.br, DNS:infopack.prodb.com.br, DNS:media.prodb.com.br, DNS:medical.cloud.prodb.com.br, DNS:office.medical.cloud.prodb.com.br, DNS:passwr.cloud.prodb.com.br, DNS:procloud.prodb.com.br, DNS:soa.prodb.com.br, DNS:testeserv1.sistemaadcom.com.br, DNS:wrealty.prodb.com.br&#xa;Not valid before: 2026-06-20T05:19:27&#xa;Not valid after:  2026-09-18T05:19:26"><table key="subject">
+<elem key="commonName">media.prodb.com.br</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">YR1</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">C0D0FF939C3E31E910FD6990E7B37DF0E1E326AA6457FF215F0D196F2D069D35D8757A42504ABC92A2FA50A8AFA734F44151EACCFFEA6E188D15BDBF6E31AAAA751DDF98983FD300394B16E36EB8BD36B802E4335CB823EBEB7D36C97C0DAA0CE43DF2FC27F5AC04E3030C8599BE1DE0C0CCFBD478ABA47BB7C4520646652B7061FC2AB33BE42EC9EE92C011591D25AA74041195CBC58FE42E427F12C683CAB7F8A3C4A54C054922E578FCBA9BE5C79F0289EB7FD18712210948480B4F071CE8E464CF5B587B895E68260E7DCBC69077A2D5C13AE664432BAB50B82872709A59B8ECBEE1DABFC96206D3FA1D7258EFF8A9AB9BBEE15C0DA2DE020A85B0568A37</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">D2:0D:4A:C0:20:C5:AB:24:FA:E8:B1:66:60:DE:EA:F3:52:98:F2:43</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">1F:2F:35:BE:46:14:82:CD:40:B1:AE:79:2C:55:78:FA:F7:D4:68:FB</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:http://yr1.i.lencr.org/</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:acesso4.infopack.com.br, DNS:dorpa.pass.cloud.prodb.com.br, DNS:drive.cloud.prodb.com.br, DNS:ifs02.prodb.com.br, DNS:ifs05.prodb.com.br, DNS:ifs06.prodb.com.br, DNS:ifs12.prodb.com.br, DNS:infopack.prodb.com.br, DNS:media.prodb.com.br, DNS:medical.cloud.prodb.com.br, DNS:office.medical.cloud.prodb.com.br, DNS:passwr.cloud.prodb.com.br, DNS:procloud.prodb.com.br, DNS:soa.prodb.com.br, DNS:testeserv1.sistemaadcom.com.br, DNS:wrealty.prodb.com.br</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://yr1.c.lencr.org/1.crl&#xa;</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : D7:6D:7D:10:D1:A7:F5:77:C2:C7:E9:5F:D7:00:BF:F9:&#xa;                82:C9:33:5A:65:E1:D0:B3:01:73:17:C0:C8:C5:69:77&#xa;    Timestamp : Jun 20 06:17:57.146 2026 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:FB:50:A7:41:18:EF:EE:AE:BD:F9:86:&#xa;                A0:8A:4C:9B:93:AA:7B:FE:D6:A1:D9:41:46:A8:7C:1F:&#xa;                B1:04:71:4D:89:02:21:00:97:A2:C0:59:0F:DF:99:F8:&#xa;                61:32:5E:D2:04:F2:ED:A8:71:07:E6:DB:34:83:AF:40:&#xa;                4C:31:9E:A1:4B:0F:EF:D4&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 1A:8B:9D:6B:0F:FE:BF:81:B4:79:39:C6:D2:31:0A:86:&#xa;                D6:D1:02:D4:F0:46:E2:18:2C:9D:E3:5F:5E:26:25:EF&#xa;    Timestamp : Jun 20 06:17:57.701 2026 GMT&#xa;    Extensions: 00:00:05:00:21:0B:6B:C2&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:05:62:C9:B6:2A:0A:A9:BA:EA:57:D4:CF:&#xa;                99:B4:44:A0:3E:2B:03:FF:73:0E:14:23:D0:22:FA:96:&#xa;                57:11:26:25:02:21:00:F3:70:4F:E6:48:3A:CE:37:B8:&#xa;                1E:F0:9F:90:70:9E:FE:1B:14:41:01:8A:28:CA:CA:18:&#xa;                6E:2E:E7:81:66:AF:08</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2026-06-20T05:19:27</elem>
+<elem key="notAfter">2026-09-18T05:19:26</elem>
+</table>
+<elem key="md5">fec2680a332eef9b48b1b25343b963ee</elem>
+<elem key="sha1">6523e4132460e2312c06239198cdb212ff083f22</elem>
+<elem key="sha256">c59b6f2bb61878feba93e0476cc890b563b06693cffeea05bc2dca7e0639a1c8</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIGdjCCBV6gAwIBAgISBV/7NkXjAWgQRLPZfHDI0T8AMA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNZUjEwHhcNMjYwNjIwMDUxOTI3WhcNMjYwOTE4MDUxOTI2WjAdMRswGQYDVQQD&#xa;ExJtZWRpYS5wcm9kYi5jb20uYnIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK&#xa;AoIBAQDA0P+TnD4x6RD9aZDns33w4eMmqmRX/yFfDRlvLQadNdh1ekJQSrySovpQ&#xa;qK+nNPRBUerM/+puGI0Vvb9uMaqqdR3fmJg/0wA5Sxbjbri9NrgC5DNcuCPr6302&#xa;yXwNqgzkPfL8J/WsBOMDDIWZvh3gwMz71HirpHu3xFIGRmUrcGH8KrM75C7J7pLA&#xa;EVkdJap0BBGVy8WP5C5CfxLGg8q3+KPEpUwFSSLlePy6m+XHnwKJ63/RhxIhCUhI&#xa;C08HHOjkZM9bWHuJXmgmDn3LxpB3otXBOuZkQyurULgocnCaWbjsvuHav8liBtP6&#xa;HXJY7/ipq5u+4VwNot4CCoWwVoo3AgMBAAGjggOYMIIDlDAOBgNVHQ8BAf8EBAMC&#xa;BaAwEwYDVR0lBAwwCgYIKwYBBQUHAwEwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQU&#xa;0g1KwCDFqyT66LFmYN7q81KY8kMwHwYDVR0jBBgwFoAUHy81vkYUgs1Asa55LFV4&#xa;+vfUaPswMwYIKwYBBQUHAQEEJzAlMCMGCCsGAQUFBzAChhdodHRwOi8veXIxLmku&#xa;bGVuY3Iub3JnLzCCAZMGA1UdEQSCAYowggGGghdhY2Vzc280LmluZm9wYWNrLmNv&#xa;bS5icoIdZG9ycGEucGFzcy5jbG91ZC5wcm9kYi5jb20uYnKCGGRyaXZlLmNsb3Vk&#xa;LnByb2RiLmNvbS5icoISaWZzMDIucHJvZGIuY29tLmJyghJpZnMwNS5wcm9kYi5j&#xa;b20uYnKCEmlmczA2LnByb2RiLmNvbS5icoISaWZzMTIucHJvZGIuY29tLmJyghVp&#xa;bmZvcGFjay5wcm9kYi5jb20uYnKCEm1lZGlhLnByb2RiLmNvbS5icoIabWVkaWNh&#xa;bC5jbG91ZC5wcm9kYi5jb20uYnKCIW9mZmljZS5tZWRpY2FsLmNsb3VkLnByb2Ri&#xa;LmNvbS5icoIZcGFzc3dyLmNsb3VkLnByb2RiLmNvbS5icoIVcHJvY2xvdWQucHJv&#xa;ZGIuY29tLmJyghBzb2EucHJvZGIuY29tLmJygh50ZXN0ZXNlcnYxLnNpc3RlbWFh&#xa;ZGNvbS5jb20uYnKCFHdyZWFsdHkucHJvZGIuY29tLmJyMBMGA1UdIAQMMAowCAYG&#xa;Z4EMAQIBMC0GA1UdHwQmMCQwIqAgoB6GHGh0dHA6Ly95cjEuYy5sZW5jci5vcmcv&#xa;MS5jcmwwggENBgorBgEEAdZ5AgQCBIH+BIH7APkAdwDXbX0Q0af1d8LH6V/XAL/5&#xa;gskzWmXh0LMBcxfAyMVpdwAAAZ7jrcaaAAAEAwBIMEYCIQD7UKdBGO/urr35hqCK&#xa;TJuTqnv+1qHZQUaofB+xBHFNiQIhAJeiwFkP35n4YTJe0gTy7ahxB+bbNIOvQEwx&#xa;nqFLD+/UAH4AGoudaw/+v4G0eTnG0jEKhtbRAtTwRuIYLJ3jX14mJe8AAAGe463I&#xa;xQAIAAAFACELa8IEAwBHMEUCIAViybYqCqm66lfUz5m0RKA+KwP/cw4UI9Ai+pZX&#xa;ESYlAiEA83BP5kg6zje4HvCfkHCe/hsUQQGKKMrKGG4u54FmrwgwDQYJKoZIhvcN&#xa;AQELBQADggEBADae7Cg1pyLPvjGMNbzSm84aEDnV9W4CkvzqDdjh2D/DWuTw7EaN&#xa;MZbCW/Iq9K3hTvJ7jscqEyov/hMIPvn7vGgFiOKGKgdM2pFwaFmksu3YvjBiZomo&#xa;48NKY8t/N93DRFYtoZtlWURqta7IkF9vIGbhh0M3EDRoRQohiilB20UXvHAjykFS&#xa;Oi+q/3/tPYzPkukPo/QK3ltzjrjdRzhzwlfBt5/GjJRlG+uKbsQY32b0Zh52C20L&#xa;+HsNliRXCVbiycaOB5WSnJVhKrj5tllDeYfl+zOIKNXYSRB35jgcYk4iyrZp0+Ig&#xa;ebZGVAbFIS7h02/PV+A91kUOUZI6u6ywYq0=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="http-title" output="Site doesn&apos;t have a title (text/html)."></script><script id="tls-alpn" output="&#xa;  h2&#xa;  http/1.1"><elem>h2</elem>
+<elem>http/1.1</elem>
+</script></port>
+<port protocol="tcp" portid="8089"><state state="open" reason="syn-ack" reason_ttl="56"/><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="ssl-cert" output="Subject: commonName=media.prodb.com.br&#xa;Subject Alternative Name: DNS:acesso4.infopack.com.br, DNS:dorpa.pass.cloud.prodb.com.br, DNS:drive.cloud.prodb.com.br, DNS:ifs02.prodb.com.br, DNS:ifs05.prodb.com.br, DNS:ifs06.prodb.com.br, DNS:ifs12.prodb.com.br, DNS:infopack.prodb.com.br, DNS:media.prodb.com.br, DNS:medical.cloud.prodb.com.br, DNS:office.medical.cloud.prodb.com.br, DNS:passwr.cloud.prodb.com.br, DNS:procloud.prodb.com.br, DNS:soa.prodb.com.br, DNS:testeserv1.sistemaadcom.com.br, DNS:wrealty.prodb.com.br&#xa;Not valid before: 2026-06-20T05:19:27&#xa;Not valid after:  2026-09-18T05:19:26"><table key="subject">
+<elem key="commonName">media.prodb.com.br</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">YR1</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">C0D0FF939C3E31E910FD6990E7B37DF0E1E326AA6457FF215F0D196F2D069D35D8757A42504ABC92A2FA50A8AFA734F44151EACCFFEA6E188D15BDBF6E31AAAA751DDF98983FD300394B16E36EB8BD36B802E4335CB823EBEB7D36C97C0DAA0CE43DF2FC27F5AC04E3030C8599BE1DE0C0CCFBD478ABA47BB7C4520646652B7061FC2AB33BE42EC9EE92C011591D25AA74041195CBC58FE42E427F12C683CAB7F8A3C4A54C054922E578FCBA9BE5C79F0289EB7FD18712210948480B4F071CE8E464CF5B587B895E68260E7DCBC69077A2D5C13AE664432BAB50B82872709A59B8ECBEE1DABFC96206D3FA1D7258EFF8A9AB9BBEE15C0DA2DE020A85B0568A37</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">D2:0D:4A:C0:20:C5:AB:24:FA:E8:B1:66:60:DE:EA:F3:52:98:F2:43</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">1F:2F:35:BE:46:14:82:CD:40:B1:AE:79:2C:55:78:FA:F7:D4:68:FB</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:http://yr1.i.lencr.org/</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:acesso4.infopack.com.br, DNS:dorpa.pass.cloud.prodb.com.br, DNS:drive.cloud.prodb.com.br, DNS:ifs02.prodb.com.br, DNS:ifs05.prodb.com.br, DNS:ifs06.prodb.com.br, DNS:ifs12.prodb.com.br, DNS:infopack.prodb.com.br, DNS:media.prodb.com.br, DNS:medical.cloud.prodb.com.br, DNS:office.medical.cloud.prodb.com.br, DNS:passwr.cloud.prodb.com.br, DNS:procloud.prodb.com.br, DNS:soa.prodb.com.br, DNS:testeserv1.sistemaadcom.com.br, DNS:wrealty.prodb.com.br</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://yr1.c.lencr.org/1.crl&#xa;</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : D7:6D:7D:10:D1:A7:F5:77:C2:C7:E9:5F:D7:00:BF:F9:&#xa;                82:C9:33:5A:65:E1:D0:B3:01:73:17:C0:C8:C5:69:77&#xa;    Timestamp : Jun 20 06:17:57.146 2026 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:FB:50:A7:41:18:EF:EE:AE:BD:F9:86:&#xa;                A0:8A:4C:9B:93:AA:7B:FE:D6:A1:D9:41:46:A8:7C:1F:&#xa;                B1:04:71:4D:89:02:21:00:97:A2:C0:59:0F:DF:99:F8:&#xa;                61:32:5E:D2:04:F2:ED:A8:71:07:E6:DB:34:83:AF:40:&#xa;                4C:31:9E:A1:4B:0F:EF:D4&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 1A:8B:9D:6B:0F:FE:BF:81:B4:79:39:C6:D2:31:0A:86:&#xa;                D6:D1:02:D4:F0:46:E2:18:2C:9D:E3:5F:5E:26:25:EF&#xa;    Timestamp : Jun 20 06:17:57.701 2026 GMT&#xa;    Extensions: 00:00:05:00:21:0B:6B:C2&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:05:62:C9:B6:2A:0A:A9:BA:EA:57:D4:CF:&#xa;                99:B4:44:A0:3E:2B:03:FF:73:0E:14:23:D0:22:FA:96:&#xa;                57:11:26:25:02:21:00:F3:70:4F:E6:48:3A:CE:37:B8:&#xa;                1E:F0:9F:90:70:9E:FE:1B:14:41:01:8A:28:CA:CA:18:&#xa;                6E:2E:E7:81:66:AF:08</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2026-06-20T05:19:27</elem>
+<elem key="notAfter">2026-09-18T05:19:26</elem>
+</table>
+<elem key="md5">fec2680a332eef9b48b1b25343b963ee</elem>
+<elem key="sha1">6523e4132460e2312c06239198cdb212ff083f22</elem>
+<elem key="sha256">c59b6f2bb61878feba93e0476cc890b563b06693cffeea05bc2dca7e0639a1c8</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIGdjCCBV6gAwIBAgISBV/7NkXjAWgQRLPZfHDI0T8AMA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNZUjEwHhcNMjYwNjIwMDUxOTI3WhcNMjYwOTE4MDUxOTI2WjAdMRswGQYDVQQD&#xa;ExJtZWRpYS5wcm9kYi5jb20uYnIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK&#xa;AoIBAQDA0P+TnD4x6RD9aZDns33w4eMmqmRX/yFfDRlvLQadNdh1ekJQSrySovpQ&#xa;qK+nNPRBUerM/+puGI0Vvb9uMaqqdR3fmJg/0wA5Sxbjbri9NrgC5DNcuCPr6302&#xa;yXwNqgzkPfL8J/WsBOMDDIWZvh3gwMz71HirpHu3xFIGRmUrcGH8KrM75C7J7pLA&#xa;EVkdJap0BBGVy8WP5C5CfxLGg8q3+KPEpUwFSSLlePy6m+XHnwKJ63/RhxIhCUhI&#xa;C08HHOjkZM9bWHuJXmgmDn3LxpB3otXBOuZkQyurULgocnCaWbjsvuHav8liBtP6&#xa;HXJY7/ipq5u+4VwNot4CCoWwVoo3AgMBAAGjggOYMIIDlDAOBgNVHQ8BAf8EBAMC&#xa;BaAwEwYDVR0lBAwwCgYIKwYBBQUHAwEwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQU&#xa;0g1KwCDFqyT66LFmYN7q81KY8kMwHwYDVR0jBBgwFoAUHy81vkYUgs1Asa55LFV4&#xa;+vfUaPswMwYIKwYBBQUHAQEEJzAlMCMGCCsGAQUFBzAChhdodHRwOi8veXIxLmku&#xa;bGVuY3Iub3JnLzCCAZMGA1UdEQSCAYowggGGghdhY2Vzc280LmluZm9wYWNrLmNv&#xa;bS5icoIdZG9ycGEucGFzcy5jbG91ZC5wcm9kYi5jb20uYnKCGGRyaXZlLmNsb3Vk&#xa;LnByb2RiLmNvbS5icoISaWZzMDIucHJvZGIuY29tLmJyghJpZnMwNS5wcm9kYi5j&#xa;b20uYnKCEmlmczA2LnByb2RiLmNvbS5icoISaWZzMTIucHJvZGIuY29tLmJyghVp&#xa;bmZvcGFjay5wcm9kYi5jb20uYnKCEm1lZGlhLnByb2RiLmNvbS5icoIabWVkaWNh&#xa;bC5jbG91ZC5wcm9kYi5jb20uYnKCIW9mZmljZS5tZWRpY2FsLmNsb3VkLnByb2Ri&#xa;LmNvbS5icoIZcGFzc3dyLmNsb3VkLnByb2RiLmNvbS5icoIVcHJvY2xvdWQucHJv&#xa;ZGIuY29tLmJyghBzb2EucHJvZGIuY29tLmJygh50ZXN0ZXNlcnYxLnNpc3RlbWFh&#xa;ZGNvbS5jb20uYnKCFHdyZWFsdHkucHJvZGIuY29tLmJyMBMGA1UdIAQMMAowCAYG&#xa;Z4EMAQIBMC0GA1UdHwQmMCQwIqAgoB6GHGh0dHA6Ly95cjEuYy5sZW5jci5vcmcv&#xa;MS5jcmwwggENBgorBgEEAdZ5AgQCBIH+BIH7APkAdwDXbX0Q0af1d8LH6V/XAL/5&#xa;gskzWmXh0LMBcxfAyMVpdwAAAZ7jrcaaAAAEAwBIMEYCIQD7UKdBGO/urr35hqCK&#xa;TJuTqnv+1qHZQUaofB+xBHFNiQIhAJeiwFkP35n4YTJe0gTy7ahxB+bbNIOvQEwx&#xa;nqFLD+/UAH4AGoudaw/+v4G0eTnG0jEKhtbRAtTwRuIYLJ3jX14mJe8AAAGe463I&#xa;xQAIAAAFACELa8IEAwBHMEUCIAViybYqCqm66lfUz5m0RKA+KwP/cw4UI9Ai+pZX&#xa;ESYlAiEA83BP5kg6zje4HvCfkHCe/hsUQQGKKMrKGG4u54FmrwgwDQYJKoZIhvcN&#xa;AQELBQADggEBADae7Cg1pyLPvjGMNbzSm84aEDnV9W4CkvzqDdjh2D/DWuTw7EaN&#xa;MZbCW/Iq9K3hTvJ7jscqEyov/hMIPvn7vGgFiOKGKgdM2pFwaFmksu3YvjBiZomo&#xa;48NKY8t/N93DRFYtoZtlWURqta7IkF9vIGbhh0M3EDRoRQohiilB20UXvHAjykFS&#xa;Oi+q/3/tPYzPkukPo/QK3ltzjrjdRzhzwlfBt5/GjJRlG+uKbsQY32b0Zh52C20L&#xa;+HsNliRXCVbiycaOB5WSnJVhKrj5tllDeYfl+zOIKNXYSRB35jgcYk4iyrZp0+Ig&#xa;ebZGVAbFIS7h02/PV+A91kUOUZI6u6ywYq0=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="tls-alpn" output="&#xa;  h2&#xa;  http/1.1"><elem>h2</elem>
+<elem>http/1.1</elem>
+</script></port>
+<port protocol="tcp" portid="8090"><state state="open" reason="syn-ack" reason_ttl="56"/><service name="opsmessaging" method="table" conf="3"/><script id="ssl-cert" output="Subject: commonName=wrealty.vulcano.cloud.prodb.com.br&#xa;Subject Alternative Name: DNS:wrealty.vulcano.cloud.prodb.com.br&#xa;Not valid before: 2026-08-18T02:21:52&#xa;Not valid after:  2026-11-16T02:21:51"><table key="subject">
+<elem key="commonName">wrealty.vulcano.cloud.prodb.com.br</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">YR2</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">AA4CF17BC71A110B660AA436BBA56A137D771E2AF677DDA4672E7BBA4F19BB6D124E51E6DFDCC6EB4D41E0EDDCD5BD1D9AD52AE48A9DF841B84428A3142C2C928270E153FF031A6CAFEE2B5B881F6E9AA118961320DFA3F00802CB7924725B31969373CC6E4C878B7D85422A78014A481E0079901FF19689B57D17BB24A78E01DE57FDED313120D0F6294687D5BAC0C3BC548B00EA4E1548F1E82848356590296ED268FD6F33D697E4422193D3A49BE17E8F76E23F0056868B7D172C2661891FC5F746EC7E6F2FB4D6BF5C67A328954BFFF7A19931DA86D47936DA07C00C00C32B99AA23524939C66AC3B5BCC4E624C9A0C167900CDED6636F4B236984D1AACB</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">33:24:9A:14:66:8C:D3:CA:60:79:3F:D8:FB:C0:19:A8:E1:C3:AC:91</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">40:15:2D:26:79:ED:32:20:9E:DF:9A:72:1D:D6:32:1F:81:0C:81:0C</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:http://yr2.i.lencr.org/</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:wrealty.vulcano.cloud.prodb.com.br</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://yr2.c.lencr.org/14.crl&#xa;</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 26:E3:64:6E:58:69:21:23:BC:34:3F:47:24:35:9B:37:&#xa;                92:CD:24:5A:88:D8:15:D3:93:33:FD:99:18:AB:47:23&#xa;    Timestamp : Aug 18 03:20:21.026 2026 GMT&#xa;    Extensions: 00:00:05:00:35:D5:2F:49&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:F7:BB:38:9A:22:31:86:47:D8:E3:96:&#xa;                81:12:5A:B6:49:66:73:2D:AA:FA:9D:CA:76:2D:4D:73:&#xa;                22:CF:37:E0:CE:02:21:00:DA:9E:AA:A0:0F:C6:B9:E3:&#xa;                8E:34:7B:59:17:31:AA:07:8B:91:F3:9B:A5:86:06:5C:&#xa;                E1:B9:62:4D:44:B3:9D:35&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : D7:6D:7D:10:D1:A7:F5:77:C2:C7:E9:5F:D7:00:BF:F9:&#xa;                82:C9:33:5A:65:E1:D0:B3:01:73:17:C0:C8:C5:69:77&#xa;    Timestamp : Aug 18 03:20:30.502 2026 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:C7:41:9B:2C:61:72:94:CF:D0:55:31:&#xa;                35:FD:33:5D:E3:0A:4E:DF:C3:0F:1F:05:D4:C8:73:6F:&#xa;                2D:67:5F:7C:3D:02:20:2D:4B:ED:2E:BF:AC:8A:33:2F:&#xa;                B6:DC:45:82:1E:EE:49:1C:BF:F5:95:FB:CC:9C:D2:DD:&#xa;                E9:42:A1:B2:A6:1E:10</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2026-08-18T02:21:52</elem>
+<elem key="notAfter">2026-11-16T02:21:51</elem>
+</table>
+<elem key="md5">44ee007d4657d52cff5a7b28c5e73137</elem>
+<elem key="sha1">04554a12615e9ca2e8ee86e035e7028ff30e8144</elem>
+<elem key="sha256">b55201dac2f5cf8686a6f67c2ebdaf7980c35626baa7afdc528d8701b40f39b6</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFHzCCBAegAwIBAgISBTM+dhca8SC4uBD0T2mhZNcNMA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNZUjIwHhcNMjYwODE4MDIyMTUyWhcNMjYxMTE2MDIyMTUxWjAtMSswKQYDVQQD&#xa;EyJ3cmVhbHR5LnZ1bGNhbm8uY2xvdWQucHJvZGIuY29tLmJyMIIBIjANBgkqhkiG&#xa;9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqkzxe8caEQtmCqQ2u6VqE313Hir2d92kZy57&#xa;uk8Zu20STlHm39zG601B4O3c1b0dmtUq5Iqd+EG4RCijFCwskoJw4VP/Axpsr+4r&#xa;W4gfbpqhGJYTIN+j8AgCy3kkclsxlpNzzG5Mh4t9hUIqeAFKSB4AeZAf8ZaJtX0X&#xa;uySnjgHeV/3tMTEg0PYpRofVusDDvFSLAOpOFUjx6ChINWWQKW7SaP1vM9aX5EIh&#xa;k9Okm+F+j3biPwBWhot9FywmYYkfxfdG7H5vL7TWv1xnoyiVS//3oZkx2obUeTba&#xa;B8AMAMMrmaojUkk5xmrDtbzE5iTJoMFnkAze1mNvSyNphNGqywIDAQABo4ICMTCC&#xa;Ai0wDgYDVR0PAQH/BAQDAgWgMBMGA1UdJQQMMAoGCCsGAQUFBwMBMAwGA1UdEwEB&#xa;/wQCMAAwHQYDVR0OBBYEFDMkmhRmjNPKYHk/2PvAGajhw6yRMB8GA1UdIwQYMBaA&#xa;FEAVLSZ57TIgnt+ach3WMh+BDIEMMDMGCCsGAQUFBwEBBCcwJTAjBggrBgEFBQcw&#xa;AoYXaHR0cDovL3lyMi5pLmxlbmNyLm9yZy8wLQYDVR0RBCYwJIIid3JlYWx0eS52&#xa;dWxjYW5vLmNsb3VkLnByb2RiLmNvbS5icjATBgNVHSAEDDAKMAgGBmeBDAECATAu&#xa;BgNVHR8EJzAlMCOgIaAfhh1odHRwOi8veXIyLmMubGVuY3Iub3JnLzE0LmNybDCC&#xa;AQ0GCisGAQQB1nkCBAIEgf4EgfsA+QB/ACbjZG5YaSEjvDQ/RyQ1mzeSzSRaiNgV&#xa;05Mz/ZkYq0cjAAABoBLiYSIACAAABQA11S9JBAMASDBGAiEA97s4miIxhkfY45aB&#xa;Elq2SWZzLar6ncp2LU1zIs834M4CIQDanqqgD8a54440e1kXMaoHi5Hzm6WGBlzh&#xa;uWJNRLOdNQB2ANdtfRDRp/V3wsfpX9cAv/mCyTNaZeHQswFzF8DIxWl3AAABoBLi&#xa;hiYAAAQDAEcwRQIhAMdBmyxhcpTP0FUxNf0zXeMKTt/DDx8F1Mhzby1nX3w9AiAt&#xa;S+0uv6yKMy+23EWCHu5JHL/1lfvMnNLd6UKhsqYeEDANBgkqhkiG9w0BAQsFAAOC&#xa;AQEAgS2qqnqnd4clmlr2bA+PZboboalV0p0ydopX34RkvXw6GtE0lPHDCIELjTRJ&#xa;pjSsM0ECFMCO90nq77bZNiC9OfDVMifLOELpPG4sk+ixPrRqXH5hp6rKGlfy53sn&#xa;kxjU8CiZIAapewZNkuIkraszf5LUqjyq8oj5hjHYxluY40cSs1NG3ea8s9REbNyE&#xa;35XHf9fV0fKCWS33XY8Uvn0f88SnTXdb/OAVaPJQXZc8Nv6ds/GtKgGnAqT7JIJW&#xa;uDOrYGaipkBKaCJHWi8AeNWirlzVS20LPd2kphRUQEUDPN/GZgLYaHMkH91VrdDs&#xa;91OC2HweJaa4pJLF9zSXWD/MgQ==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="tls-alpn" output="&#xa;  h2&#xa;  http/1.1"><elem>h2</elem>
+<elem>http/1.1</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+<port protocol="tcp" portid="9000"><state state="open" reason="syn-ack" reason_ttl="56"/><service name="cslistener" method="table" conf="3"/><script id="tls-alpn" output="&#xa;  h2&#xa;  http/1.1"><elem>h2</elem>
+<elem>http/1.1</elem>
+</script><script id="ssl-cert" output="Subject: commonName=rootermedical.cloud.prodb.com.br&#xa;Subject Alternative Name: DNS:remoto.rooter.cloud.prodb.com.br, DNS:rootermedical.cloud.prodb.com.br&#xa;Not valid before: 2026-07-29T02:19:57&#xa;Not valid after:  2026-10-27T02:19:56"><table key="subject">
+<elem key="commonName">rootermedical.cloud.prodb.com.br</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">YR1</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">AD494B66BDB78A7C14215E7E2AFBB8E5A720F05D58BEC9BDEEF940823F214D50573B1855960003AA7EB75DDDB9D8AC402F37567ACC147B75C73D30F82EF3211D466D29D78A53B9B1670BACF3E91E8747E3DB5D18B7EB167B8C6B572CF72056CAFE55491116310E0A55C3DBA7EC129983151318B200A982DC70DDDF26D4A9290A3228E72CEA34372370AC627AE820D622A07CA36CA4488FA5FA726A532F916712477E0A75B0DA72C70EC76B1DC4DBD9078B89A3F87FB5AB88C0936B9EC4D5B6C2A8D408B4B9DE2069643939A8BB778209AFE19EB6CE1B7684D8EEF3B8B7753A939476CD3A743154DCF511DD2A3BFD137D914BEFE7EEDD450A7F6A55F010FEA5B9</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">B8:52:40:F0:C2:94:6D:A9:92:CF:15:CC:13:F5:77:AA:FC:9C:69:9C</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">1F:2F:35:BE:46:14:82:CD:40:B1:AE:79:2C:55:78:FA:F7:D4:68:FB</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:http://yr1.i.lencr.org/</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:remoto.rooter.cloud.prodb.com.br, DNS:rootermedical.cloud.prodb.com.br</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://yr1.c.lencr.org/73.crl&#xa;</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : CB:38:F7:15:89:7C:84:A1:44:5F:5B:C1:DD:FB:C9:6E:&#xa;                F2:9A:59:CD:47:0A:69:05:85:B0:CB:14:C3:14:58:E7&#xa;    Timestamp : Jul 29 03:18:27.759 2026 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:F8:9E:E5:7C:BE:25:C4:DB:6B:97:16:&#xa;                1D:E0:4C:A4:E1:BC:05:3D:30:27:DA:4A:94:8A:1E:AB:&#xa;                E8:F4:63:3C:13:02:21:00:EA:88:03:EC:B2:BF:98:1F:&#xa;                82:E8:F2:C9:30:C5:A6:91:50:CC:8F:12:1D:9F:A3:4E:&#xa;                AD:53:8C:9D:CF:2C:D9:B6&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : A8:26:CB:E3:0A:C6:35:12:46:53:3F:E0:65:F1:4F:19:&#xa;                D9:6E:19:08:13:C4:1D:D9:6D:79:00:B3:12:3C:55:27&#xa;    Timestamp : Jul 29 03:18:28.653 2026 GMT&#xa;    Extensions: 00:00:05:00:16:E7:09:CA&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:92:4A:39:50:D8:7A:88:59:25:E2:B2:&#xa;                12:35:66:99:74:50:73:3E:0D:A8:F0:D2:A0:38:DD:38:&#xa;                06:DD:A1:27:06:02:20:01:FB:02:31:BD:7A:1E:4A:4E:&#xa;                46:8D:A7:BA:9B:76:26:B2:E8:94:3D:92:B4:31:4B:BE:&#xa;                E9:1F:27:AE:BC:71:F2</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2026-07-29T02:19:57</elem>
+<elem key="notAfter">2026-10-27T02:19:56</elem>
+</table>
+<elem key="md5">00b47ef9b8ade86de252e972fe57642b</elem>
+<elem key="sha1">33046fda551af51ca2e1bdb9de230ce22e815e78</elem>
+<elem key="sha256">f1aad0a7851f0a11db700cf24c20cf82b928fd4f1ac86beeb78c6a100b80eb17</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFPTCCBCWgAwIBAgISBlcV4WtxC2Sp90oPccmyx7XIMA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNZUjEwHhcNMjYwNzI5MDIxOTU3WhcNMjYxMDI3MDIxOTU2WjArMSkwJwYDVQQD&#xa;EyByb290ZXJtZWRpY2FsLmNsb3VkLnByb2RiLmNvbS5icjCCASIwDQYJKoZIhvcN&#xa;AQEBBQADggEPADCCAQoCggEBAK1JS2a9t4p8FCFefir7uOWnIPBdWL7Jve75QII/&#xa;IU1QVzsYVZYAA6p+t13dudisQC83VnrMFHt1xz0w+C7zIR1GbSnXilO5sWcLrPPp&#xa;HodH49tdGLfrFnuMa1cs9yBWyv5VSREWMQ4KVcPbp+wSmYMVExiyAKmC3HDd3ybU&#xa;qSkKMijnLOo0NyNwrGJ66CDWIqB8o2ykSI+l+nJqUy+RZxJHfgp1sNpyxw7Hax3E&#xa;29kHi4mj+H+1q4jAk2uexNW2wqjUCLS53iBpZDk5qLt3ggmv4Z62zht2hNju87i3&#xa;dTqTlHbNOnQxVNz1Ed0qO/0TfZFL7+fu3UUKf2pV8BD+pbkCAwEAAaOCAlEwggJN&#xa;MA4GA1UdDwEB/wQEAwIFoDATBgNVHSUEDDAKBggrBgEFBQcDATAMBgNVHRMBAf8E&#xa;AjAAMB0GA1UdDgQWBBS4UkDwwpRtqZLPFcwT9Xeq/JxpnDAfBgNVHSMEGDAWgBQf&#xa;LzW+RhSCzUCxrnksVXj699Ro+zAzBggrBgEFBQcBAQQnMCUwIwYIKwYBBQUHMAKG&#xa;F2h0dHA6Ly95cjEuaS5sZW5jci5vcmcvME0GA1UdEQRGMESCIHJlbW90by5yb290&#xa;ZXIuY2xvdWQucHJvZGIuY29tLmJygiByb290ZXJtZWRpY2FsLmNsb3VkLnByb2Ri&#xa;LmNvbS5icjATBgNVHSAEDDAKMAgGBmeBDAECATAuBgNVHR8EJzAlMCOgIaAfhh1o&#xa;dHRwOi8veXIxLmMubGVuY3Iub3JnLzczLmNybDCCAQ0GCisGAQQB1nkCBAIEgf4E&#xa;gfsA+QB3AMs49xWJfIShRF9bwd37yW7ymlnNRwppBYWwyxTDFFjnAAABn6vhdq8A&#xa;AAQDAEgwRgIhAPie5Xy+JcTba5cWHeBMpOG8BT0wJ9pKlIoeq+j0YzwTAiEA6ogD&#xa;7LK/mB+C6PLJMMWmkVDMjxIdn6NOrVOMnc8s2bYAfgCoJsvjCsY1EkZTP+Bl8U8Z&#xa;2W4ZCBPEHdlteQCzEjxVJwAAAZ+r4XotAAgAAAUAFucJygQDAEcwRQIhAJJKOVDY&#xa;eohZJeKyEjVmmXRQcz4NqPDSoDjdOAbdoScGAiAB+wIxvXoeSk5Gjae6m3YmsuiU&#xa;PZK0MUu+6R8nrrxx8jANBgkqhkiG9w0BAQsFAAOCAQEAhyslX+UbC5vBdyLKBQKX&#xa;0pTkAshz7rgtiBKHinRxCtXf7YJ1+qCpKci0QQckYxaQ9wdx4n1VAZc0LuXLdON8&#xa;fSGEsrJ8EkYBMwCfhcMT0IKnXxHU1xZJ24qIjpYX1pqsnR0Eq/eflMQ9hKPj4GnJ&#xa;g8nEBha2erCE7WiDykxusKpDa8+UuRdrh3YyjQ5NT7Hix+csJ4jOKcrWmLZ6niM5&#xa;myQJhqlZTmzgfl1+sTnS7sDbm7zNB+A83qeGQKnydIRMdC95/Q3yTsiv0+y5QJZX&#xa;B0Vf0viQncj2bD1nwDE9KxolETY/sCqmzpK9kPoo5Aut/JFx/WlF27LZc8/N3mbe&#xa;mg==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+<port protocol="tcp" portid="9001"><state state="open" reason="syn-ack" reason_ttl="56"/><service name="tor-orport" method="table" conf="3"/><script id="tls-alpn" output="&#xa;  h2&#xa;  http/1.1"><elem>h2</elem>
+<elem>http/1.1</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="ssl-cert" output="Subject: commonName=rootermedical.cloud.prodb.com.br&#xa;Subject Alternative Name: DNS:remoto.rooter.cloud.prodb.com.br, DNS:rootermedical.cloud.prodb.com.br&#xa;Not valid before: 2026-07-29T02:19:57&#xa;Not valid after:  2026-10-27T02:19:56"><table key="subject">
+<elem key="commonName">rootermedical.cloud.prodb.com.br</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">YR1</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">AD494B66BDB78A7C14215E7E2AFBB8E5A720F05D58BEC9BDEEF940823F214D50573B1855960003AA7EB75DDDB9D8AC402F37567ACC147B75C73D30F82EF3211D466D29D78A53B9B1670BACF3E91E8747E3DB5D18B7EB167B8C6B572CF72056CAFE55491116310E0A55C3DBA7EC129983151318B200A982DC70DDDF26D4A9290A3228E72CEA34372370AC627AE820D622A07CA36CA4488FA5FA726A532F916712477E0A75B0DA72C70EC76B1DC4DBD9078B89A3F87FB5AB88C0936B9EC4D5B6C2A8D408B4B9DE2069643939A8BB778209AFE19EB6CE1B7684D8EEF3B8B7753A939476CD3A743154DCF511DD2A3BFD137D914BEFE7EEDD450A7F6A55F010FEA5B9</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">B8:52:40:F0:C2:94:6D:A9:92:CF:15:CC:13:F5:77:AA:FC:9C:69:9C</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">1F:2F:35:BE:46:14:82:CD:40:B1:AE:79:2C:55:78:FA:F7:D4:68:FB</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:http://yr1.i.lencr.org/</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:remoto.rooter.cloud.prodb.com.br, DNS:rootermedical.cloud.prodb.com.br</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://yr1.c.lencr.org/73.crl&#xa;</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : CB:38:F7:15:89:7C:84:A1:44:5F:5B:C1:DD:FB:C9:6E:&#xa;                F2:9A:59:CD:47:0A:69:05:85:B0:CB:14:C3:14:58:E7&#xa;    Timestamp : Jul 29 03:18:27.759 2026 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:F8:9E:E5:7C:BE:25:C4:DB:6B:97:16:&#xa;                1D:E0:4C:A4:E1:BC:05:3D:30:27:DA:4A:94:8A:1E:AB:&#xa;                E8:F4:63:3C:13:02:21:00:EA:88:03:EC:B2:BF:98:1F:&#xa;                82:E8:F2:C9:30:C5:A6:91:50:CC:8F:12:1D:9F:A3:4E:&#xa;                AD:53:8C:9D:CF:2C:D9:B6&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : A8:26:CB:E3:0A:C6:35:12:46:53:3F:E0:65:F1:4F:19:&#xa;                D9:6E:19:08:13:C4:1D:D9:6D:79:00:B3:12:3C:55:27&#xa;    Timestamp : Jul 29 03:18:28.653 2026 GMT&#xa;    Extensions: 00:00:05:00:16:E7:09:CA&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:92:4A:39:50:D8:7A:88:59:25:E2:B2:&#xa;                12:35:66:99:74:50:73:3E:0D:A8:F0:D2:A0:38:DD:38:&#xa;                06:DD:A1:27:06:02:20:01:FB:02:31:BD:7A:1E:4A:4E:&#xa;                46:8D:A7:BA:9B:76:26:B2:E8:94:3D:92:B4:31:4B:BE:&#xa;                E9:1F:27:AE:BC:71:F2</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2026-07-29T02:19:57</elem>
+<elem key="notAfter">2026-10-27T02:19:56</elem>
+</table>
+<elem key="md5">00b47ef9b8ade86de252e972fe57642b</elem>
+<elem key="sha1">33046fda551af51ca2e1bdb9de230ce22e815e78</elem>
+<elem key="sha256">f1aad0a7851f0a11db700cf24c20cf82b928fd4f1ac86beeb78c6a100b80eb17</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFPTCCBCWgAwIBAgISBlcV4WtxC2Sp90oPccmyx7XIMA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNZUjEwHhcNMjYwNzI5MDIxOTU3WhcNMjYxMDI3MDIxOTU2WjArMSkwJwYDVQQD&#xa;EyByb290ZXJtZWRpY2FsLmNsb3VkLnByb2RiLmNvbS5icjCCASIwDQYJKoZIhvcN&#xa;AQEBBQADggEPADCCAQoCggEBAK1JS2a9t4p8FCFefir7uOWnIPBdWL7Jve75QII/&#xa;IU1QVzsYVZYAA6p+t13dudisQC83VnrMFHt1xz0w+C7zIR1GbSnXilO5sWcLrPPp&#xa;HodH49tdGLfrFnuMa1cs9yBWyv5VSREWMQ4KVcPbp+wSmYMVExiyAKmC3HDd3ybU&#xa;qSkKMijnLOo0NyNwrGJ66CDWIqB8o2ykSI+l+nJqUy+RZxJHfgp1sNpyxw7Hax3E&#xa;29kHi4mj+H+1q4jAk2uexNW2wqjUCLS53iBpZDk5qLt3ggmv4Z62zht2hNju87i3&#xa;dTqTlHbNOnQxVNz1Ed0qO/0TfZFL7+fu3UUKf2pV8BD+pbkCAwEAAaOCAlEwggJN&#xa;MA4GA1UdDwEB/wQEAwIFoDATBgNVHSUEDDAKBggrBgEFBQcDATAMBgNVHRMBAf8E&#xa;AjAAMB0GA1UdDgQWBBS4UkDwwpRtqZLPFcwT9Xeq/JxpnDAfBgNVHSMEGDAWgBQf&#xa;LzW+RhSCzUCxrnksVXj699Ro+zAzBggrBgEFBQcBAQQnMCUwIwYIKwYBBQUHMAKG&#xa;F2h0dHA6Ly95cjEuaS5sZW5jci5vcmcvME0GA1UdEQRGMESCIHJlbW90by5yb290&#xa;ZXIuY2xvdWQucHJvZGIuY29tLmJygiByb290ZXJtZWRpY2FsLmNsb3VkLnByb2Ri&#xa;LmNvbS5icjATBgNVHSAEDDAKMAgGBmeBDAECATAuBgNVHR8EJzAlMCOgIaAfhh1o&#xa;dHRwOi8veXIxLmMubGVuY3Iub3JnLzczLmNybDCCAQ0GCisGAQQB1nkCBAIEgf4E&#xa;gfsA+QB3AMs49xWJfIShRF9bwd37yW7ymlnNRwppBYWwyxTDFFjnAAABn6vhdq8A&#xa;AAQDAEgwRgIhAPie5Xy+JcTba5cWHeBMpOG8BT0wJ9pKlIoeq+j0YzwTAiEA6ogD&#xa;7LK/mB+C6PLJMMWmkVDMjxIdn6NOrVOMnc8s2bYAfgCoJsvjCsY1EkZTP+Bl8U8Z&#xa;2W4ZCBPEHdlteQCzEjxVJwAAAZ+r4XotAAgAAAUAFucJygQDAEcwRQIhAJJKOVDY&#xa;eohZJeKyEjVmmXRQcz4NqPDSoDjdOAbdoScGAiAB+wIxvXoeSk5Gjae6m3YmsuiU&#xa;PZK0MUu+6R8nrrxx8jANBgkqhkiG9w0BAQsFAAOCAQEAhyslX+UbC5vBdyLKBQKX&#xa;0pTkAshz7rgtiBKHinRxCtXf7YJ1+qCpKci0QQckYxaQ9wdx4n1VAZc0LuXLdON8&#xa;fSGEsrJ8EkYBMwCfhcMT0IKnXxHU1xZJ24qIjpYX1pqsnR0Eq/eflMQ9hKPj4GnJ&#xa;g8nEBha2erCE7WiDykxusKpDa8+UuRdrh3YyjQ5NT7Hix+csJ4jOKcrWmLZ6niM5&#xa;myQJhqlZTmzgfl1+sTnS7sDbm7zNB+A83qeGQKnydIRMdC95/Q3yTsiv0+y5QJZX&#xa;B0Vf0viQncj2bD1nwDE9KxolETY/sCqmzpK9kPoo5Aut/JFx/WlF27LZc8/N3mbe&#xa;mg==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="30000"><state state="open" reason="syn-ack" reason_ttl="56"/><service name="ndmps" method="table" conf="3"/><script id="ssl-cert" output="Subject: commonName=medical.web.cloud.prodb.com.br&#xa;Subject Alternative Name: DNS:medical.web.cloud.prodb.com.br&#xa;Not valid before: 2026-08-06T02:20:39&#xa;Not valid after:  2026-11-04T02:20:38"><table key="subject">
+<elem key="commonName">medical.web.cloud.prodb.com.br</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">YR2</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">BC4531B8BB5F2D360A97003DE86192D59301A83627ED15FF847721675C4C1122B11C2F9AF66657C85417D2BCE4EE1BFDA187DC2FFC50FDC559A987034F0184ECF0BBB03521FB4AD2EE8116E9FA783E955DB5F8A77186B5C8F3F2AF6FE87613031C1E618F6BD2D15EAB6C446925A3299A3F89C8CFF9287FA861915C5F50AED6A79621047DD39066BF475A45A20B321BBA41291FE50B2452FB9FE41D0C76793ABE07601FC0AE7B691E1A5CB210549D2548DC43B36B1BD9C4BF634F2F9FDE675CB34CDA6FABB1FFABAE8C632BE099DA0BB017A2493493B44BDBCD8A41DE0F80C22519373039389BAF89E43C9C0F6F6D018D0906F3898CDD32A41F215BD9CEDEAE2B</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">89:2B:BC:0B:ED:F8:21:A5:C2:72:52:F0:3A:E3:C6:81:A0:E1:D4:7A</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">40:15:2D:26:79:ED:32:20:9E:DF:9A:72:1D:D6:32:1F:81:0C:81:0C</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:http://yr2.i.lencr.org/</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:medical.web.cloud.prodb.com.br</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://yr2.c.lencr.org/89.crl&#xa;</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : AF:67:88:3B:57:B0:4E:DD:8F:A6:D9:7E:F6:2E:A8:EB:&#xa;                81:0A:C7:71:60:F0:24:5E:55:D6:0C:2F:E7:85:87:3A&#xa;    Timestamp : Aug  6 03:19:09.800 2026 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:E5:08:B4:14:33:76:73:B7:CF:10:BF:&#xa;                86:30:0D:27:27:18:05:D7:4D:B3:79:2D:A7:97:B5:58:&#xa;                ED:84:D3:B6:D0:02:20:05:B6:D5:EC:50:18:4E:08:42:&#xa;                CE:E2:E4:32:39:1C:79:4F:A1:D4:5B:E9:38:C8:52:35:&#xa;                5D:D3:52:5E:91:5A:F5&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : A8:26:CB:E3:0A:C6:35:12:46:53:3F:E0:65:F1:4F:19:&#xa;                D9:6E:19:08:13:C4:1D:D9:6D:79:00:B3:12:3C:55:27&#xa;    Timestamp : Aug  6 03:19:10.030 2026 GMT&#xa;    Extensions: 00:00:05:00:18:AE:3D:A9&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:7A:58:B0:57:AF:A1:A1:87:31:06:5E:4B:&#xa;                E6:6E:A2:C8:B5:04:90:A6:4A:CE:C2:F2:87:19:09:DA:&#xa;                5C:C1:34:17:02:20:1D:92:5F:91:F0:5D:51:42:02:CE:&#xa;                03:0F:1C:01:5D:52:A5:C7:A0:6C:AA:24:EE:E1:F4:3F:&#xa;                3F:59:20:09:B4:7D</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2026-08-06T02:20:39</elem>
+<elem key="notAfter">2026-11-04T02:20:38</elem>
+</table>
+<elem key="md5">8cc45a5909bcc4df73b0661626eaf3e0</elem>
+<elem key="sha1">9b20772ddec9ef80c53b50955379a7e774921708</elem>
+<elem key="sha256">7d53cdacd3135cdd294e78ca27954e1a6421b94b9ae82b25f0785545f0f582d2</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFFTCCA/2gAwIBAgISBdbziKKsprUJ2wytt26ouoBYMA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNZUjIwHhcNMjYwODA2MDIyMDM5WhcNMjYxMTA0MDIyMDM4WjApMScwJQYDVQQD&#xa;Ex5tZWRpY2FsLndlYi5jbG91ZC5wcm9kYi5jb20uYnIwggEiMA0GCSqGSIb3DQEB&#xa;AQUAA4IBDwAwggEKAoIBAQC8RTG4u18tNgqXAD3oYZLVkwGoNiftFf+EdyFnXEwR&#xa;IrEcL5r2ZlfIVBfSvOTuG/2hh9wv/FD9xVmphwNPAYTs8LuwNSH7StLugRbp+ng+&#xa;lV21+KdxhrXI8/Kvb+h2EwMcHmGPa9LRXqtsRGkloymaP4nIz/kof6hhkVxfUK7W&#xa;p5YhBH3TkGa/R1pFogsyG7pBKR/lCyRS+5/kHQx2eTq+B2AfwK57aR4aXLIQVJ0l&#xa;SNxDs2sb2cS/Y08vn95nXLNM2m+rsf+rroxjK+CZ2guwF6JJNJO0S9vNikHeD4DC&#xa;JRk3MDk4m6+J5DycD29tAY0JBvOJjN0ypB8hW9nO3q4rAgMBAAGjggIrMIICJzAO&#xa;BgNVHQ8BAf8EBAMCBaAwEwYDVR0lBAwwCgYIKwYBBQUHAwEwDAYDVR0TAQH/BAIw&#xa;ADAdBgNVHQ4EFgQUiSu8C+34IaXCclLwOuPGgaDh1HowHwYDVR0jBBgwFoAUQBUt&#xa;JnntMiCe35pyHdYyH4EMgQwwMwYIKwYBBQUHAQEEJzAlMCMGCCsGAQUFBzAChhdo&#xa;dHRwOi8veXIyLmkubGVuY3Iub3JnLzApBgNVHREEIjAggh5tZWRpY2FsLndlYi5j&#xa;bG91ZC5wcm9kYi5jb20uYnIwEwYDVR0gBAwwCjAIBgZngQwBAgEwLgYDVR0fBCcw&#xa;JTAjoCGgH4YdaHR0cDovL3lyMi5jLmxlbmNyLm9yZy84OS5jcmwwggELBgorBgEE&#xa;AdZ5AgQCBIH8BIH5APcAdgCvZ4g7V7BO3Y+m2X72LqjrgQrHcWDwJF5V1gwv54WH&#xa;OgAAAZ/VFProAAAEAwBHMEUCIQDlCLQUM3Zzt88Qv4YwDScnGAXXTbN5LaeXtVjt&#xa;hNO20AIgBbbV7FAYTghCzuLkMjkceU+h1FvpOMhSNV3TUl6RWvUAfQCoJsvjCsY1&#xa;EkZTP+Bl8U8Z2W4ZCBPEHdlteQCzEjxVJwAAAZ/VFPvOAAgAAAUAGK49qQQDAEYw&#xa;RAIgeliwV6+hoYcxBl5L5m6iyLUEkKZKzsLyhxkJ2lzBNBcCIB2SX5HwXVFCAs4D&#xa;DxwBXVKlx6BsqiTu4fQ/P1kgCbR9MA0GCSqGSIb3DQEBCwUAA4IBAQBxnmEWeiiF&#xa;8EJZvGF5u/MMmi5XrxU0YZJi4M6e8u719gm/pAcURGwzZmX/Z8Y0H5OY98wolrfT&#xa;4kkEYfHpgLqU4u0ndr9CWJ1Wt7VMyCkZ/SwW/9v80Yx+Ck5OaIWeZuqG87t9U2W8&#xa;Yix6O5gixd/++PPcuIKKVx4vCK7eRn5pXycnJRFXtQeWjmuJuRgb2qGTiwEnoxbW&#xa;F8TM53psODqcGDWZYrpUwza46E7cOhVAYfF7QgkDezNXhVhLj4FS0B1lSlaghLIN&#xa;tfbdvtf1U38nHr6GDCGsOy1ALgG77VWD8dlCTEfgpKqDmrsByysqMb7z9QpBF86S&#xa;7Z/xSRkIBELh&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="tls-alpn" output="&#xa;  h2&#xa;  http/1.1"><elem>h2</elem>
+<elem>http/1.1</elem>
+</script></port>
+<port protocol="tcp" portid="30001"><state state="open" reason="syn-ack" reason_ttl="56"/><service name="pago-services1" method="table" conf="3"/><script id="ssl-cert" output="Subject: commonName=medical.web.cloud.prodb.com.br&#xa;Subject Alternative Name: DNS:medical.web.cloud.prodb.com.br&#xa;Not valid before: 2026-08-06T02:20:39&#xa;Not valid after:  2026-11-04T02:20:38"><table key="subject">
+<elem key="commonName">medical.web.cloud.prodb.com.br</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">YR2</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">BC4531B8BB5F2D360A97003DE86192D59301A83627ED15FF847721675C4C1122B11C2F9AF66657C85417D2BCE4EE1BFDA187DC2FFC50FDC559A987034F0184ECF0BBB03521FB4AD2EE8116E9FA783E955DB5F8A77186B5C8F3F2AF6FE87613031C1E618F6BD2D15EAB6C446925A3299A3F89C8CFF9287FA861915C5F50AED6A79621047DD39066BF475A45A20B321BBA41291FE50B2452FB9FE41D0C76793ABE07601FC0AE7B691E1A5CB210549D2548DC43B36B1BD9C4BF634F2F9FDE675CB34CDA6FABB1FFABAE8C632BE099DA0BB017A2493493B44BDBCD8A41DE0F80C22519373039389BAF89E43C9C0F6F6D018D0906F3898CDD32A41F215BD9CEDEAE2B</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">89:2B:BC:0B:ED:F8:21:A5:C2:72:52:F0:3A:E3:C6:81:A0:E1:D4:7A</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">40:15:2D:26:79:ED:32:20:9E:DF:9A:72:1D:D6:32:1F:81:0C:81:0C</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:http://yr2.i.lencr.org/</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:medical.web.cloud.prodb.com.br</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://yr2.c.lencr.org/89.crl&#xa;</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : AF:67:88:3B:57:B0:4E:DD:8F:A6:D9:7E:F6:2E:A8:EB:&#xa;                81:0A:C7:71:60:F0:24:5E:55:D6:0C:2F:E7:85:87:3A&#xa;    Timestamp : Aug  6 03:19:09.800 2026 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:E5:08:B4:14:33:76:73:B7:CF:10:BF:&#xa;                86:30:0D:27:27:18:05:D7:4D:B3:79:2D:A7:97:B5:58:&#xa;                ED:84:D3:B6:D0:02:20:05:B6:D5:EC:50:18:4E:08:42:&#xa;                CE:E2:E4:32:39:1C:79:4F:A1:D4:5B:E9:38:C8:52:35:&#xa;                5D:D3:52:5E:91:5A:F5&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : A8:26:CB:E3:0A:C6:35:12:46:53:3F:E0:65:F1:4F:19:&#xa;                D9:6E:19:08:13:C4:1D:D9:6D:79:00:B3:12:3C:55:27&#xa;    Timestamp : Aug  6 03:19:10.030 2026 GMT&#xa;    Extensions: 00:00:05:00:18:AE:3D:A9&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:7A:58:B0:57:AF:A1:A1:87:31:06:5E:4B:&#xa;                E6:6E:A2:C8:B5:04:90:A6:4A:CE:C2:F2:87:19:09:DA:&#xa;                5C:C1:34:17:02:20:1D:92:5F:91:F0:5D:51:42:02:CE:&#xa;                03:0F:1C:01:5D:52:A5:C7:A0:6C:AA:24:EE:E1:F4:3F:&#xa;                3F:59:20:09:B4:7D</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2026-08-06T02:20:39</elem>
+<elem key="notAfter">2026-11-04T02:20:38</elem>
+</table>
+<elem key="md5">8cc45a5909bcc4df73b0661626eaf3e0</elem>
+<elem key="sha1">9b20772ddec9ef80c53b50955379a7e774921708</elem>
+<elem key="sha256">7d53cdacd3135cdd294e78ca27954e1a6421b94b9ae82b25f0785545f0f582d2</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFFTCCA/2gAwIBAgISBdbziKKsprUJ2wytt26ouoBYMA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNZUjIwHhcNMjYwODA2MDIyMDM5WhcNMjYxMTA0MDIyMDM4WjApMScwJQYDVQQD&#xa;Ex5tZWRpY2FsLndlYi5jbG91ZC5wcm9kYi5jb20uYnIwggEiMA0GCSqGSIb3DQEB&#xa;AQUAA4IBDwAwggEKAoIBAQC8RTG4u18tNgqXAD3oYZLVkwGoNiftFf+EdyFnXEwR&#xa;IrEcL5r2ZlfIVBfSvOTuG/2hh9wv/FD9xVmphwNPAYTs8LuwNSH7StLugRbp+ng+&#xa;lV21+KdxhrXI8/Kvb+h2EwMcHmGPa9LRXqtsRGkloymaP4nIz/kof6hhkVxfUK7W&#xa;p5YhBH3TkGa/R1pFogsyG7pBKR/lCyRS+5/kHQx2eTq+B2AfwK57aR4aXLIQVJ0l&#xa;SNxDs2sb2cS/Y08vn95nXLNM2m+rsf+rroxjK+CZ2guwF6JJNJO0S9vNikHeD4DC&#xa;JRk3MDk4m6+J5DycD29tAY0JBvOJjN0ypB8hW9nO3q4rAgMBAAGjggIrMIICJzAO&#xa;BgNVHQ8BAf8EBAMCBaAwEwYDVR0lBAwwCgYIKwYBBQUHAwEwDAYDVR0TAQH/BAIw&#xa;ADAdBgNVHQ4EFgQUiSu8C+34IaXCclLwOuPGgaDh1HowHwYDVR0jBBgwFoAUQBUt&#xa;JnntMiCe35pyHdYyH4EMgQwwMwYIKwYBBQUHAQEEJzAlMCMGCCsGAQUFBzAChhdo&#xa;dHRwOi8veXIyLmkubGVuY3Iub3JnLzApBgNVHREEIjAggh5tZWRpY2FsLndlYi5j&#xa;bG91ZC5wcm9kYi5jb20uYnIwEwYDVR0gBAwwCjAIBgZngQwBAgEwLgYDVR0fBCcw&#xa;JTAjoCGgH4YdaHR0cDovL3lyMi5jLmxlbmNyLm9yZy84OS5jcmwwggELBgorBgEE&#xa;AdZ5AgQCBIH8BIH5APcAdgCvZ4g7V7BO3Y+m2X72LqjrgQrHcWDwJF5V1gwv54WH&#xa;OgAAAZ/VFProAAAEAwBHMEUCIQDlCLQUM3Zzt88Qv4YwDScnGAXXTbN5LaeXtVjt&#xa;hNO20AIgBbbV7FAYTghCzuLkMjkceU+h1FvpOMhSNV3TUl6RWvUAfQCoJsvjCsY1&#xa;EkZTP+Bl8U8Z2W4ZCBPEHdlteQCzEjxVJwAAAZ/VFPvOAAgAAAUAGK49qQQDAEYw&#xa;RAIgeliwV6+hoYcxBl5L5m6iyLUEkKZKzsLyhxkJ2lzBNBcCIB2SX5HwXVFCAs4D&#xa;DxwBXVKlx6BsqiTu4fQ/P1kgCbR9MA0GCSqGSIb3DQEBCwUAA4IBAQBxnmEWeiiF&#xa;8EJZvGF5u/MMmi5XrxU0YZJi4M6e8u719gm/pAcURGwzZmX/Z8Y0H5OY98wolrfT&#xa;4kkEYfHpgLqU4u0ndr9CWJ1Wt7VMyCkZ/SwW/9v80Yx+Ck5OaIWeZuqG87t9U2W8&#xa;Yix6O5gixd/++PPcuIKKVx4vCK7eRn5pXycnJRFXtQeWjmuJuRgb2qGTiwEnoxbW&#xa;F8TM53psODqcGDWZYrpUwza46E7cOhVAYfF7QgkDezNXhVhLj4FS0B1lSlaghLIN&#xa;tfbdvtf1U38nHr6GDCGsOy1ALgG77VWD8dlCTEfgpKqDmrsByysqMb7z9QpBF86S&#xa;7Z/xSRkIBELh&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="tls-alpn" output="&#xa;  h2&#xa;  http/1.1"><elem>h2</elem>
+<elem>http/1.1</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+<port protocol="tcp" portid="30002"><state state="open" reason="syn-ack" reason_ttl="56"/><service name="pago-services2" method="table" conf="3"/><script id="ssl-cert" output="Subject: commonName=medical.web.cloud.prodb.com.br&#xa;Subject Alternative Name: DNS:medical.web.cloud.prodb.com.br&#xa;Not valid before: 2026-08-06T02:20:39&#xa;Not valid after:  2026-11-04T02:20:38"><table key="subject">
+<elem key="commonName">medical.web.cloud.prodb.com.br</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">YR2</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">BC4531B8BB5F2D360A97003DE86192D59301A83627ED15FF847721675C4C1122B11C2F9AF66657C85417D2BCE4EE1BFDA187DC2FFC50FDC559A987034F0184ECF0BBB03521FB4AD2EE8116E9FA783E955DB5F8A77186B5C8F3F2AF6FE87613031C1E618F6BD2D15EAB6C446925A3299A3F89C8CFF9287FA861915C5F50AED6A79621047DD39066BF475A45A20B321BBA41291FE50B2452FB9FE41D0C76793ABE07601FC0AE7B691E1A5CB210549D2548DC43B36B1BD9C4BF634F2F9FDE675CB34CDA6FABB1FFABAE8C632BE099DA0BB017A2493493B44BDBCD8A41DE0F80C22519373039389BAF89E43C9C0F6F6D018D0906F3898CDD32A41F215BD9CEDEAE2B</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">89:2B:BC:0B:ED:F8:21:A5:C2:72:52:F0:3A:E3:C6:81:A0:E1:D4:7A</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">40:15:2D:26:79:ED:32:20:9E:DF:9A:72:1D:D6:32:1F:81:0C:81:0C</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:http://yr2.i.lencr.org/</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:medical.web.cloud.prodb.com.br</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://yr2.c.lencr.org/89.crl&#xa;</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : AF:67:88:3B:57:B0:4E:DD:8F:A6:D9:7E:F6:2E:A8:EB:&#xa;                81:0A:C7:71:60:F0:24:5E:55:D6:0C:2F:E7:85:87:3A&#xa;    Timestamp : Aug  6 03:19:09.800 2026 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:21:00:E5:08:B4:14:33:76:73:B7:CF:10:BF:&#xa;                86:30:0D:27:27:18:05:D7:4D:B3:79:2D:A7:97:B5:58:&#xa;                ED:84:D3:B6:D0:02:20:05:B6:D5:EC:50:18:4E:08:42:&#xa;                CE:E2:E4:32:39:1C:79:4F:A1:D4:5B:E9:38:C8:52:35:&#xa;                5D:D3:52:5E:91:5A:F5&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : A8:26:CB:E3:0A:C6:35:12:46:53:3F:E0:65:F1:4F:19:&#xa;                D9:6E:19:08:13:C4:1D:D9:6D:79:00:B3:12:3C:55:27&#xa;    Timestamp : Aug  6 03:19:10.030 2026 GMT&#xa;    Extensions: 00:00:05:00:18:AE:3D:A9&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:7A:58:B0:57:AF:A1:A1:87:31:06:5E:4B:&#xa;                E6:6E:A2:C8:B5:04:90:A6:4A:CE:C2:F2:87:19:09:DA:&#xa;                5C:C1:34:17:02:20:1D:92:5F:91:F0:5D:51:42:02:CE:&#xa;                03:0F:1C:01:5D:52:A5:C7:A0:6C:AA:24:EE:E1:F4:3F:&#xa;                3F:59:20:09:B4:7D</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2026-08-06T02:20:39</elem>
+<elem key="notAfter">2026-11-04T02:20:38</elem>
+</table>
+<elem key="md5">8cc45a5909bcc4df73b0661626eaf3e0</elem>
+<elem key="sha1">9b20772ddec9ef80c53b50955379a7e774921708</elem>
+<elem key="sha256">7d53cdacd3135cdd294e78ca27954e1a6421b94b9ae82b25f0785545f0f582d2</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFFTCCA/2gAwIBAgISBdbziKKsprUJ2wytt26ouoBYMA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNZUjIwHhcNMjYwODA2MDIyMDM5WhcNMjYxMTA0MDIyMDM4WjApMScwJQYDVQQD&#xa;Ex5tZWRpY2FsLndlYi5jbG91ZC5wcm9kYi5jb20uYnIwggEiMA0GCSqGSIb3DQEB&#xa;AQUAA4IBDwAwggEKAoIBAQC8RTG4u18tNgqXAD3oYZLVkwGoNiftFf+EdyFnXEwR&#xa;IrEcL5r2ZlfIVBfSvOTuG/2hh9wv/FD9xVmphwNPAYTs8LuwNSH7StLugRbp+ng+&#xa;lV21+KdxhrXI8/Kvb+h2EwMcHmGPa9LRXqtsRGkloymaP4nIz/kof6hhkVxfUK7W&#xa;p5YhBH3TkGa/R1pFogsyG7pBKR/lCyRS+5/kHQx2eTq+B2AfwK57aR4aXLIQVJ0l&#xa;SNxDs2sb2cS/Y08vn95nXLNM2m+rsf+rroxjK+CZ2guwF6JJNJO0S9vNikHeD4DC&#xa;JRk3MDk4m6+J5DycD29tAY0JBvOJjN0ypB8hW9nO3q4rAgMBAAGjggIrMIICJzAO&#xa;BgNVHQ8BAf8EBAMCBaAwEwYDVR0lBAwwCgYIKwYBBQUHAwEwDAYDVR0TAQH/BAIw&#xa;ADAdBgNVHQ4EFgQUiSu8C+34IaXCclLwOuPGgaDh1HowHwYDVR0jBBgwFoAUQBUt&#xa;JnntMiCe35pyHdYyH4EMgQwwMwYIKwYBBQUHAQEEJzAlMCMGCCsGAQUFBzAChhdo&#xa;dHRwOi8veXIyLmkubGVuY3Iub3JnLzApBgNVHREEIjAggh5tZWRpY2FsLndlYi5j&#xa;bG91ZC5wcm9kYi5jb20uYnIwEwYDVR0gBAwwCjAIBgZngQwBAgEwLgYDVR0fBCcw&#xa;JTAjoCGgH4YdaHR0cDovL3lyMi5jLmxlbmNyLm9yZy84OS5jcmwwggELBgorBgEE&#xa;AdZ5AgQCBIH8BIH5APcAdgCvZ4g7V7BO3Y+m2X72LqjrgQrHcWDwJF5V1gwv54WH&#xa;OgAAAZ/VFProAAAEAwBHMEUCIQDlCLQUM3Zzt88Qv4YwDScnGAXXTbN5LaeXtVjt&#xa;hNO20AIgBbbV7FAYTghCzuLkMjkceU+h1FvpOMhSNV3TUl6RWvUAfQCoJsvjCsY1&#xa;EkZTP+Bl8U8Z2W4ZCBPEHdlteQCzEjxVJwAAAZ/VFPvOAAgAAAUAGK49qQQDAEYw&#xa;RAIgeliwV6+hoYcxBl5L5m6iyLUEkKZKzsLyhxkJ2lzBNBcCIB2SX5HwXVFCAs4D&#xa;DxwBXVKlx6BsqiTu4fQ/P1kgCbR9MA0GCSqGSIb3DQEBCwUAA4IBAQBxnmEWeiiF&#xa;8EJZvGF5u/MMmi5XrxU0YZJi4M6e8u719gm/pAcURGwzZmX/Z8Y0H5OY98wolrfT&#xa;4kkEYfHpgLqU4u0ndr9CWJ1Wt7VMyCkZ/SwW/9v80Yx+Ck5OaIWeZuqG87t9U2W8&#xa;Yix6O5gixd/++PPcuIKKVx4vCK7eRn5pXycnJRFXtQeWjmuJuRgb2qGTiwEnoxbW&#xa;F8TM53psODqcGDWZYrpUwza46E7cOhVAYfF7QgkDezNXhVhLj4FS0B1lSlaghLIN&#xa;tfbdvtf1U38nHr6GDCGsOy1ALgG77VWD8dlCTEfgpKqDmrsByysqMb7z9QpBF86S&#xa;7Z/xSRkIBELh&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="tls-alpn" output="&#xa;  h2&#xa;  http/1.1"><elem>h2</elem>
+<elem>http/1.1</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+<port protocol="tcp" portid="35000"><state state="open" reason="syn-ack" reason_ttl="56"/><service name="heathview" method="table" conf="3"/><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="tls-alpn" output="&#xa;  h2&#xa;  http/1.1"><elem>h2</elem>
+<elem>http/1.1</elem>
+</script><script id="ssl-cert" output="Subject: commonName=servix.cloud.prodb.com.br&#xa;Subject Alternative Name: DNS:servix.cloud.prodb.com.br&#xa;Not valid before: 2026-08-06T02:20:56&#xa;Not valid after:  2026-11-04T02:20:55"><table key="subject">
+<elem key="commonName">servix.cloud.prodb.com.br</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">YR1</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">D97CF65E37FAADE3EE3ED32A8B1C4282710064EF41972145B4E9A2689A58108009B75BC264283D85838403BE7A61142B4AC01CCDD63E755208AF8FA54761464FB8135876E671B41D14609707D3724D8245119A21355C468258AF31DE1AEF76CF864F3E96379A0D929A1D66AA87D553B1CA208498DF7F6C75D1FD814AF4CE6FB40A9FBADC65E0F50EEC7EE36C0D90360F8E4CE35E74AD9EF023DF2C2EB0AD29E7279B88552F9ECDE57E7F87E07191C5E776442ECA443688F2762977393FA673046DB89AF9418E70248FBE94E5814F1B2172751365BFBCF59E7F65C9EA851D18193B76191261B15057D8C5C8758C6F4BCD10E61E525E8963791D3D864BCACFF6C1</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">0C:C6:52:02:C0:70:D6:F3:E9:2D:2C:26:D2:09:E7:27:ED:F5:BC:F6</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">1F:2F:35:BE:46:14:82:CD:40:B1:AE:79:2C:55:78:FA:F7:D4:68:FB</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:http://yr1.i.lencr.org/</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:servix.cloud.prodb.com.br</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://yr1.c.lencr.org/36.crl&#xa;</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : C8:A3:C4:7F:C7:B3:AD:B9:35:6B:01:3F:6A:7A:12:6D:&#xa;                E3:3A:4E:43:A5:C6:46:F9:97:AD:39:75:99:1D:CF:9A&#xa;    Timestamp : Aug  6 03:19:26.374 2026 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:85:B5:A6:7F:4F:FF:9A:3F:BB:D6:92:&#xa;                F5:A5:C2:89:72:EB:94:F7:07:28:54:34:8E:3F:A2:D2:&#xa;                5D:AA:9D:A4:F0:02:21:00:E8:BB:B8:8B:08:91:AC:1A:&#xa;                C7:21:9E:1E:AB:80:C3:9E:36:65:A7:3D:7B:A3:52:CC:&#xa;                93:93:1D:7F:90:27:03:9D&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 46:AF:86:3D:3B:3E:E5:9F:A5:77:DE:A8:24:5D:36:B0:&#xa;                D9:ED:22:A2:23:F4:61:77:41:22:94:52:EE:95:50:5F&#xa;    Timestamp : Aug  6 03:19:26.555 2026 GMT&#xa;    Extensions: 00:00:05:00:10:03:91:DB&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:44:02:20:7D:BE:D0:99:7F:9C:C8:A1:27:72:B1:56:&#xa;                5A:7C:B6:C6:3D:88:E0:67:C1:A9:1B:69:76:9A:27:3B:&#xa;                45:C4:07:00:02:20:62:70:A9:30:49:5B:57:93:16:03:&#xa;                77:B0:22:2D:E0:3F:D4:CF:EA:D3:CB:24:53:AE:3A:E6:&#xa;                4E:BD:CD:A8:80:0A</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2026-08-06T02:20:56</elem>
+<elem key="notAfter">2026-11-04T02:20:55</elem>
+</table>
+<elem key="md5">83461b33abe5809ed36f7e75aa16f283</elem>
+<elem key="sha1">89b5f2856ff9757e483da04ae460143f8464e174</elem>
+<elem key="sha256">fa49c2f915b8b8931c634c52d9af99c24c85949e7a24e71587f7360512310700</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFDDCCA/SgAwIBAgISBt9qOOhgz8W+0ivQYjW7DTkjMA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNZUjEwHhcNMjYwODA2MDIyMDU2WhcNMjYxMTA0MDIyMDU1WjAkMSIwIAYDVQQD&#xa;ExlzZXJ2aXguY2xvdWQucHJvZGIuY29tLmJyMIIBIjANBgkqhkiG9w0BAQEFAAOC&#xa;AQ8AMIIBCgKCAQEA2Xz2Xjf6rePuPtMqixxCgnEAZO9BlyFFtOmiaJpYEIAJt1vC&#xa;ZCg9hYOEA756YRQrSsAczdY+dVIIr4+lR2FGT7gTWHbmcbQdFGCXB9NyTYJFEZoh&#xa;NVxGglivMd4a73bPhk8+ljeaDZKaHWaqh9VTscoghJjff2x10f2BSvTOb7QKn7rc&#xa;ZeD1Dux+42wNkDYPjkzjXnStnvAj3ywusK0p5yebiFUvns3lfn+H4HGRxed2RC7K&#xa;RDaI8nYpdzk/pnMEbbia+UGOcCSPvpTlgU8bIXJ1E2W/vPWef2XJ6oUdGBk7dhkS&#xa;YbFQV9jFyHWMb0vNEOYeUl6JY3kdPYZLys/2wQIDAQABo4ICJzCCAiMwDgYDVR0P&#xa;AQH/BAQDAgWgMBMGA1UdJQQMMAoGCCsGAQUFBwMBMAwGA1UdEwEB/wQCMAAwHQYD&#xa;VR0OBBYEFAzGUgLAcNbz6S0sJtIJ5yft9bz2MB8GA1UdIwQYMBaAFB8vNb5GFILN&#xa;QLGueSxVePr31Gj7MDMGCCsGAQUFBwEBBCcwJTAjBggrBgEFBQcwAoYXaHR0cDov&#xa;L3lyMS5pLmxlbmNyLm9yZy8wJAYDVR0RBB0wG4IZc2Vydml4LmNsb3VkLnByb2Ri&#xa;LmNvbS5icjATBgNVHSAEDDAKMAgGBmeBDAECATAuBgNVHR8EJzAlMCOgIaAfhh1o&#xa;dHRwOi8veXIxLmMubGVuY3Iub3JnLzM2LmNybDCCAQwGCisGAQQB1nkCBAIEgf0E&#xa;gfoA+AB3AMijxH/Hs625NWsBP2p6Em3jOk5DpcZG+ZetOXWZHc+aAAABn9UVO6YA&#xa;AAQDAEgwRgIhAIW1pn9P/5o/u9aS9aXCiXLrlPcHKFQ0jj+i0l2qnaTwAiEA6Lu4&#xa;iwiRrBrHIZ4eq4DDnjZlpz17o1LMk5Mdf5AnA50AfQBGr4Y9Oz7ln6V33qgkXTaw&#xa;2e0ioiP0YXdBIpRS7pVQXwAAAZ/VFTxbAAgAAAUAEAOR2wQDAEYwRAIgfb7QmX+c&#xa;yKEncrFWWny2xj2I4GfBqRtpdponO0XEBwACIGJwqTBJW1eTFgN3sCIt4D/Uz+rT&#xa;yyRTrjrmTr3NqIAKMA0GCSqGSIb3DQEBCwUAA4IBAQBBuEDVBYWRAM5DqXHVG5TJ&#xa;VTuHkMM1K9O2KKC2CGrte3bVJGBZceBArJfDNJZMRVW1hEcl+IwN2zIZty5TSE5f&#xa;DTB3AFDPro/HHMlPNRke6ReaAz6xlhdmdT2Ik03qx8+x2FkCRk6bkfWWazQKkpYU&#xa;tgz1gWdBcme7wTyn7F9iXK6ygzLT6EBqb9uYckq769UY510PRxk7UfOKas9JRYsj&#xa;Id2sHaHxVG/qxt6nDUyHoqZeMaLLZoP4/gzRF7/oujVfWcQlRk0AcdeLEmCl7Tlu&#xa;fVKHbxLwbKhEAcK0lW4RRnsGMqmEeXFLJYWybMtkQQdhnqpL0ju8aj4ZqVV0d/I/&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="57820"><state state="open" reason="syn-ack" reason_ttl="56"/><script id="tls-alpn" output="&#xa;  h2&#xa;  http/1.1"><elem>h2</elem>
+<elem>http/1.1</elem>
+</script><script id="ssl-cert" output="Subject: commonName=media.prodb.com.br&#xa;Subject Alternative Name: DNS:acesso4.infopack.com.br, DNS:dorpa.pass.cloud.prodb.com.br, DNS:drive.cloud.prodb.com.br, DNS:ifs02.prodb.com.br, DNS:ifs05.prodb.com.br, DNS:ifs06.prodb.com.br, DNS:ifs12.prodb.com.br, DNS:infopack.prodb.com.br, DNS:media.prodb.com.br, DNS:medical.cloud.prodb.com.br, DNS:office.medical.cloud.prodb.com.br, DNS:passwr.cloud.prodb.com.br, DNS:procloud.prodb.com.br, DNS:soa.prodb.com.br, DNS:testeserv1.sistemaadcom.com.br, DNS:wrealty.prodb.com.br&#xa;Not valid before: 2026-06-20T05:19:27&#xa;Not valid after:  2026-09-18T05:19:26"><table key="subject">
+<elem key="commonName">media.prodb.com.br</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">YR1</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">C0D0FF939C3E31E910FD6990E7B37DF0E1E326AA6457FF215F0D196F2D069D35D8757A42504ABC92A2FA50A8AFA734F44151EACCFFEA6E188D15BDBF6E31AAAA751DDF98983FD300394B16E36EB8BD36B802E4335CB823EBEB7D36C97C0DAA0CE43DF2FC27F5AC04E3030C8599BE1DE0C0CCFBD478ABA47BB7C4520646652B7061FC2AB33BE42EC9EE92C011591D25AA74041195CBC58FE42E427F12C683CAB7F8A3C4A54C054922E578FCBA9BE5C79F0289EB7FD18712210948480B4F071CE8E464CF5B587B895E68260E7DCBC69077A2D5C13AE664432BAB50B82872709A59B8ECBEE1DABFC96206D3FA1D7258EFF8A9AB9BBEE15C0DA2DE020A85B0568A37</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">D2:0D:4A:C0:20:C5:AB:24:FA:E8:B1:66:60:DE:EA:F3:52:98:F2:43</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">1F:2F:35:BE:46:14:82:CD:40:B1:AE:79:2C:55:78:FA:F7:D4:68:FB</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:http://yr1.i.lencr.org/</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:acesso4.infopack.com.br, DNS:dorpa.pass.cloud.prodb.com.br, DNS:drive.cloud.prodb.com.br, DNS:ifs02.prodb.com.br, DNS:ifs05.prodb.com.br, DNS:ifs06.prodb.com.br, DNS:ifs12.prodb.com.br, DNS:infopack.prodb.com.br, DNS:media.prodb.com.br, DNS:medical.cloud.prodb.com.br, DNS:office.medical.cloud.prodb.com.br, DNS:passwr.cloud.prodb.com.br, DNS:procloud.prodb.com.br, DNS:soa.prodb.com.br, DNS:testeserv1.sistemaadcom.com.br, DNS:wrealty.prodb.com.br</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://yr1.c.lencr.org/1.crl&#xa;</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : D7:6D:7D:10:D1:A7:F5:77:C2:C7:E9:5F:D7:00:BF:F9:&#xa;                82:C9:33:5A:65:E1:D0:B3:01:73:17:C0:C8:C5:69:77&#xa;    Timestamp : Jun 20 06:17:57.146 2026 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:FB:50:A7:41:18:EF:EE:AE:BD:F9:86:&#xa;                A0:8A:4C:9B:93:AA:7B:FE:D6:A1:D9:41:46:A8:7C:1F:&#xa;                B1:04:71:4D:89:02:21:00:97:A2:C0:59:0F:DF:99:F8:&#xa;                61:32:5E:D2:04:F2:ED:A8:71:07:E6:DB:34:83:AF:40:&#xa;                4C:31:9E:A1:4B:0F:EF:D4&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 1A:8B:9D:6B:0F:FE:BF:81:B4:79:39:C6:D2:31:0A:86:&#xa;                D6:D1:02:D4:F0:46:E2:18:2C:9D:E3:5F:5E:26:25:EF&#xa;    Timestamp : Jun 20 06:17:57.701 2026 GMT&#xa;    Extensions: 00:00:05:00:21:0B:6B:C2&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:05:62:C9:B6:2A:0A:A9:BA:EA:57:D4:CF:&#xa;                99:B4:44:A0:3E:2B:03:FF:73:0E:14:23:D0:22:FA:96:&#xa;                57:11:26:25:02:21:00:F3:70:4F:E6:48:3A:CE:37:B8:&#xa;                1E:F0:9F:90:70:9E:FE:1B:14:41:01:8A:28:CA:CA:18:&#xa;                6E:2E:E7:81:66:AF:08</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2026-06-20T05:19:27</elem>
+<elem key="notAfter">2026-09-18T05:19:26</elem>
+</table>
+<elem key="md5">fec2680a332eef9b48b1b25343b963ee</elem>
+<elem key="sha1">6523e4132460e2312c06239198cdb212ff083f22</elem>
+<elem key="sha256">c59b6f2bb61878feba93e0476cc890b563b06693cffeea05bc2dca7e0639a1c8</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIGdjCCBV6gAwIBAgISBV/7NkXjAWgQRLPZfHDI0T8AMA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNZUjEwHhcNMjYwNjIwMDUxOTI3WhcNMjYwOTE4MDUxOTI2WjAdMRswGQYDVQQD&#xa;ExJtZWRpYS5wcm9kYi5jb20uYnIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK&#xa;AoIBAQDA0P+TnD4x6RD9aZDns33w4eMmqmRX/yFfDRlvLQadNdh1ekJQSrySovpQ&#xa;qK+nNPRBUerM/+puGI0Vvb9uMaqqdR3fmJg/0wA5Sxbjbri9NrgC5DNcuCPr6302&#xa;yXwNqgzkPfL8J/WsBOMDDIWZvh3gwMz71HirpHu3xFIGRmUrcGH8KrM75C7J7pLA&#xa;EVkdJap0BBGVy8WP5C5CfxLGg8q3+KPEpUwFSSLlePy6m+XHnwKJ63/RhxIhCUhI&#xa;C08HHOjkZM9bWHuJXmgmDn3LxpB3otXBOuZkQyurULgocnCaWbjsvuHav8liBtP6&#xa;HXJY7/ipq5u+4VwNot4CCoWwVoo3AgMBAAGjggOYMIIDlDAOBgNVHQ8BAf8EBAMC&#xa;BaAwEwYDVR0lBAwwCgYIKwYBBQUHAwEwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQU&#xa;0g1KwCDFqyT66LFmYN7q81KY8kMwHwYDVR0jBBgwFoAUHy81vkYUgs1Asa55LFV4&#xa;+vfUaPswMwYIKwYBBQUHAQEEJzAlMCMGCCsGAQUFBzAChhdodHRwOi8veXIxLmku&#xa;bGVuY3Iub3JnLzCCAZMGA1UdEQSCAYowggGGghdhY2Vzc280LmluZm9wYWNrLmNv&#xa;bS5icoIdZG9ycGEucGFzcy5jbG91ZC5wcm9kYi5jb20uYnKCGGRyaXZlLmNsb3Vk&#xa;LnByb2RiLmNvbS5icoISaWZzMDIucHJvZGIuY29tLmJyghJpZnMwNS5wcm9kYi5j&#xa;b20uYnKCEmlmczA2LnByb2RiLmNvbS5icoISaWZzMTIucHJvZGIuY29tLmJyghVp&#xa;bmZvcGFjay5wcm9kYi5jb20uYnKCEm1lZGlhLnByb2RiLmNvbS5icoIabWVkaWNh&#xa;bC5jbG91ZC5wcm9kYi5jb20uYnKCIW9mZmljZS5tZWRpY2FsLmNsb3VkLnByb2Ri&#xa;LmNvbS5icoIZcGFzc3dyLmNsb3VkLnByb2RiLmNvbS5icoIVcHJvY2xvdWQucHJv&#xa;ZGIuY29tLmJyghBzb2EucHJvZGIuY29tLmJygh50ZXN0ZXNlcnYxLnNpc3RlbWFh&#xa;ZGNvbS5jb20uYnKCFHdyZWFsdHkucHJvZGIuY29tLmJyMBMGA1UdIAQMMAowCAYG&#xa;Z4EMAQIBMC0GA1UdHwQmMCQwIqAgoB6GHGh0dHA6Ly95cjEuYy5sZW5jci5vcmcv&#xa;MS5jcmwwggENBgorBgEEAdZ5AgQCBIH+BIH7APkAdwDXbX0Q0af1d8LH6V/XAL/5&#xa;gskzWmXh0LMBcxfAyMVpdwAAAZ7jrcaaAAAEAwBIMEYCIQD7UKdBGO/urr35hqCK&#xa;TJuTqnv+1qHZQUaofB+xBHFNiQIhAJeiwFkP35n4YTJe0gTy7ahxB+bbNIOvQEwx&#xa;nqFLD+/UAH4AGoudaw/+v4G0eTnG0jEKhtbRAtTwRuIYLJ3jX14mJe8AAAGe463I&#xa;xQAIAAAFACELa8IEAwBHMEUCIAViybYqCqm66lfUz5m0RKA+KwP/cw4UI9Ai+pZX&#xa;ESYlAiEA83BP5kg6zje4HvCfkHCe/hsUQQGKKMrKGG4u54FmrwgwDQYJKoZIhvcN&#xa;AQELBQADggEBADae7Cg1pyLPvjGMNbzSm84aEDnV9W4CkvzqDdjh2D/DWuTw7EaN&#xa;MZbCW/Iq9K3hTvJ7jscqEyov/hMIPvn7vGgFiOKGKgdM2pFwaFmksu3YvjBiZomo&#xa;48NKY8t/N93DRFYtoZtlWURqta7IkF9vIGbhh0M3EDRoRQohiilB20UXvHAjykFS&#xa;Oi+q/3/tPYzPkukPo/QK3ltzjrjdRzhzwlfBt5/GjJRlG+uKbsQY32b0Zh52C20L&#xa;+HsNliRXCVbiycaOB5WSnJVhKrj5tllDeYfl+zOIKNXYSRB35jgcYk4iyrZp0+Ig&#xa;ebZGVAbFIS7h02/PV+A91kUOUZI6u6ywYq0=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+<port protocol="tcp" portid="64800"><state state="open" reason="syn-ack" reason_ttl="56"/><script id="ssl-cert" output="Subject: commonName=media.prodb.com.br&#xa;Subject Alternative Name: DNS:acesso4.infopack.com.br, DNS:dorpa.pass.cloud.prodb.com.br, DNS:drive.cloud.prodb.com.br, DNS:ifs02.prodb.com.br, DNS:ifs05.prodb.com.br, DNS:ifs06.prodb.com.br, DNS:ifs12.prodb.com.br, DNS:infopack.prodb.com.br, DNS:media.prodb.com.br, DNS:medical.cloud.prodb.com.br, DNS:office.medical.cloud.prodb.com.br, DNS:passwr.cloud.prodb.com.br, DNS:procloud.prodb.com.br, DNS:soa.prodb.com.br, DNS:testeserv1.sistemaadcom.com.br, DNS:wrealty.prodb.com.br&#xa;Not valid before: 2026-06-20T05:19:27&#xa;Not valid after:  2026-09-18T05:19:26"><table key="subject">
+<elem key="commonName">media.prodb.com.br</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">YR1</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">Let&apos;s Encrypt</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">C0D0FF939C3E31E910FD6990E7B37DF0E1E326AA6457FF215F0D196F2D069D35D8757A42504ABC92A2FA50A8AFA734F44151EACCFFEA6E188D15BDBF6E31AAAA751DDF98983FD300394B16E36EB8BD36B802E4335CB823EBEB7D36C97C0DAA0CE43DF2FC27F5AC04E3030C8599BE1DE0C0CCFBD478ABA47BB7C4520646652B7061FC2AB33BE42EC9EE92C011591D25AA74041195CBC58FE42E427F12C683CAB7F8A3C4A54C054922E578FCBA9BE5C79F0289EB7FD18712210948480B4F071CE8E464CF5B587B895E68260E7DCBC69077A2D5C13AE664432BAB50B82872709A59B8ECBEE1DABFC96206D3FA1D7258EFF8A9AB9BBEE15C0DA2DE020A85B0568A37</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">D2:0D:4A:C0:20:C5:AB:24:FA:E8:B1:66:60:DE:EA:F3:52:98:F2:43</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">1F:2F:35:BE:46:14:82:CD:40:B1:AE:79:2C:55:78:FA:F7:D4:68:FB</elem>
+</table>
+<table>
+<elem key="name">Authority Information Access</elem>
+<elem key="value">CA Issuers - URI:http://yr1.i.lencr.org/</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:acesso4.infopack.com.br, DNS:dorpa.pass.cloud.prodb.com.br, DNS:drive.cloud.prodb.com.br, DNS:ifs02.prodb.com.br, DNS:ifs05.prodb.com.br, DNS:ifs06.prodb.com.br, DNS:ifs12.prodb.com.br, DNS:infopack.prodb.com.br, DNS:media.prodb.com.br, DNS:medical.cloud.prodb.com.br, DNS:office.medical.cloud.prodb.com.br, DNS:passwr.cloud.prodb.com.br, DNS:procloud.prodb.com.br, DNS:soa.prodb.com.br, DNS:testeserv1.sistemaadcom.com.br, DNS:wrealty.prodb.com.br</elem>
+</table>
+<table>
+<elem key="name">X509v3 Certificate Policies</elem>
+<elem key="value">Policy: 2.23.140.1.2.1</elem>
+</table>
+<table>
+<elem key="name">X509v3 CRL Distribution Points</elem>
+<elem key="value">Full Name:&#xa;  URI:http://yr1.c.lencr.org/1.crl&#xa;</elem>
+</table>
+<table>
+<elem key="name">CT Precertificate SCTs</elem>
+<elem key="value">Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : D7:6D:7D:10:D1:A7:F5:77:C2:C7:E9:5F:D7:00:BF:F9:&#xa;                82:C9:33:5A:65:E1:D0:B3:01:73:17:C0:C8:C5:69:77&#xa;    Timestamp : Jun 20 06:17:57.146 2026 GMT&#xa;    Extensions: none&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:46:02:21:00:FB:50:A7:41:18:EF:EE:AE:BD:F9:86:&#xa;                A0:8A:4C:9B:93:AA:7B:FE:D6:A1:D9:41:46:A8:7C:1F:&#xa;                B1:04:71:4D:89:02:21:00:97:A2:C0:59:0F:DF:99:F8:&#xa;                61:32:5E:D2:04:F2:ED:A8:71:07:E6:DB:34:83:AF:40:&#xa;                4C:31:9E:A1:4B:0F:EF:D4&#xa;Signed Certificate Timestamp:&#xa;    Version   : v1 (0x0)&#xa;    Log ID    : 1A:8B:9D:6B:0F:FE:BF:81:B4:79:39:C6:D2:31:0A:86:&#xa;                D6:D1:02:D4:F0:46:E2:18:2C:9D:E3:5F:5E:26:25:EF&#xa;    Timestamp : Jun 20 06:17:57.701 2026 GMT&#xa;    Extensions: 00:00:05:00:21:0B:6B:C2&#xa;    Signature : ecdsa-with-SHA256&#xa;                30:45:02:20:05:62:C9:B6:2A:0A:A9:BA:EA:57:D4:CF:&#xa;                99:B4:44:A0:3E:2B:03:FF:73:0E:14:23:D0:22:FA:96:&#xa;                57:11:26:25:02:21:00:F3:70:4F:E6:48:3A:CE:37:B8:&#xa;                1E:F0:9F:90:70:9E:FE:1B:14:41:01:8A:28:CA:CA:18:&#xa;                6E:2E:E7:81:66:AF:08</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2026-06-20T05:19:27</elem>
+<elem key="notAfter">2026-09-18T05:19:26</elem>
+</table>
+<elem key="md5">fec2680a332eef9b48b1b25343b963ee</elem>
+<elem key="sha1">6523e4132460e2312c06239198cdb212ff083f22</elem>
+<elem key="sha256">c59b6f2bb61878feba93e0476cc890b563b06693cffeea05bc2dca7e0639a1c8</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIGdjCCBV6gAwIBAgISBV/7NkXjAWgQRLPZfHDI0T8AMA0GCSqGSIb3DQEBCwUA&#xa;MDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD&#xa;EwNZUjEwHhcNMjYwNjIwMDUxOTI3WhcNMjYwOTE4MDUxOTI2WjAdMRswGQYDVQQD&#xa;ExJtZWRpYS5wcm9kYi5jb20uYnIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK&#xa;AoIBAQDA0P+TnD4x6RD9aZDns33w4eMmqmRX/yFfDRlvLQadNdh1ekJQSrySovpQ&#xa;qK+nNPRBUerM/+puGI0Vvb9uMaqqdR3fmJg/0wA5Sxbjbri9NrgC5DNcuCPr6302&#xa;yXwNqgzkPfL8J/WsBOMDDIWZvh3gwMz71HirpHu3xFIGRmUrcGH8KrM75C7J7pLA&#xa;EVkdJap0BBGVy8WP5C5CfxLGg8q3+KPEpUwFSSLlePy6m+XHnwKJ63/RhxIhCUhI&#xa;C08HHOjkZM9bWHuJXmgmDn3LxpB3otXBOuZkQyurULgocnCaWbjsvuHav8liBtP6&#xa;HXJY7/ipq5u+4VwNot4CCoWwVoo3AgMBAAGjggOYMIIDlDAOBgNVHQ8BAf8EBAMC&#xa;BaAwEwYDVR0lBAwwCgYIKwYBBQUHAwEwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQU&#xa;0g1KwCDFqyT66LFmYN7q81KY8kMwHwYDVR0jBBgwFoAUHy81vkYUgs1Asa55LFV4&#xa;+vfUaPswMwYIKwYBBQUHAQEEJzAlMCMGCCsGAQUFBzAChhdodHRwOi8veXIxLmku&#xa;bGVuY3Iub3JnLzCCAZMGA1UdEQSCAYowggGGghdhY2Vzc280LmluZm9wYWNrLmNv&#xa;bS5icoIdZG9ycGEucGFzcy5jbG91ZC5wcm9kYi5jb20uYnKCGGRyaXZlLmNsb3Vk&#xa;LnByb2RiLmNvbS5icoISaWZzMDIucHJvZGIuY29tLmJyghJpZnMwNS5wcm9kYi5j&#xa;b20uYnKCEmlmczA2LnByb2RiLmNvbS5icoISaWZzMTIucHJvZGIuY29tLmJyghVp&#xa;bmZvcGFjay5wcm9kYi5jb20uYnKCEm1lZGlhLnByb2RiLmNvbS5icoIabWVkaWNh&#xa;bC5jbG91ZC5wcm9kYi5jb20uYnKCIW9mZmljZS5tZWRpY2FsLmNsb3VkLnByb2Ri&#xa;LmNvbS5icoIZcGFzc3dyLmNsb3VkLnByb2RiLmNvbS5icoIVcHJvY2xvdWQucHJv&#xa;ZGIuY29tLmJyghBzb2EucHJvZGIuY29tLmJygh50ZXN0ZXNlcnYxLnNpc3RlbWFh&#xa;ZGNvbS5jb20uYnKCFHdyZWFsdHkucHJvZGIuY29tLmJyMBMGA1UdIAQMMAowCAYG&#xa;Z4EMAQIBMC0GA1UdHwQmMCQwIqAgoB6GHGh0dHA6Ly95cjEuYy5sZW5jci5vcmcv&#xa;MS5jcmwwggENBgorBgEEAdZ5AgQCBIH+BIH7APkAdwDXbX0Q0af1d8LH6V/XAL/5&#xa;gskzWmXh0LMBcxfAyMVpdwAAAZ7jrcaaAAAEAwBIMEYCIQD7UKdBGO/urr35hqCK&#xa;TJuTqnv+1qHZQUaofB+xBHFNiQIhAJeiwFkP35n4YTJe0gTy7ahxB+bbNIOvQEwx&#xa;nqFLD+/UAH4AGoudaw/+v4G0eTnG0jEKhtbRAtTwRuIYLJ3jX14mJe8AAAGe463I&#xa;xQAIAAAFACELa8IEAwBHMEUCIAViybYqCqm66lfUz5m0RKA+KwP/cw4UI9Ai+pZX&#xa;ESYlAiEA83BP5kg6zje4HvCfkHCe/hsUQQGKKMrKGG4u54FmrwgwDQYJKoZIhvcN&#xa;AQELBQADggEBADae7Cg1pyLPvjGMNbzSm84aEDnV9W4CkvzqDdjh2D/DWuTw7EaN&#xa;MZbCW/Iq9K3hTvJ7jscqEyov/hMIPvn7vGgFiOKGKgdM2pFwaFmksu3YvjBiZomo&#xa;48NKY8t/N93DRFYtoZtlWURqta7IkF9vIGbhh0M3EDRoRQohiilB20UXvHAjykFS&#xa;Oi+q/3/tPYzPkukPo/QK3ltzjrjdRzhzwlfBt5/GjJRlG+uKbsQY32b0Zh52C20L&#xa;+HsNliRXCVbiycaOB5WSnJVhKrj5tllDeYfl+zOIKNXYSRB35jgcYk4iyrZp0+Ig&#xa;ebZGVAbFIS7h02/PV+A91kUOUZI6u6ywYq0=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="tls-alpn" output="&#xa;  h2&#xa;  http/1.1"><elem>h2</elem>
+<elem>http/1.1</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+</ports>
+<times srtt="18823" rttvar="520" to="100000"/>
+</host>
+<runstats><finished time="1787591519" timestr="Mon Aug 24 14:11:59 2026" summary="Nmap done at Mon Aug 24 14:11:59 2026; 1 IP address (1 host up) scanned in 11.07 seconds" elapsed="11.07" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
