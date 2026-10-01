@@ -1,4 +1,0 @@
-# Nmap 7.99 scan initiated Mon Aug 24 14:09:36 2026 as: /usr/lib/nmap/nmap -Pn -T4 --top-ports 1000 -oA ./nmap_20260824_140936/01_quick_tcp ifs06.prodb.com.br
-Host: 45.239.41.7 (reverso-45-239-41-7.prodb.com.br)	Status: Up
-Host: 45.239.41.7 (reverso-45-239-41-7.prodb.com.br)	Ports: 80/open/tcp//http///, 443/open/tcp//https///, 3001/open/tcp//nessus///, 3333/open/tcp//dec-notes///, 8088/open/tcp//radan-http///, 8089/open/tcp/////, 8090/open/tcp//opsmessaging///, 9000/open/tcp//cslistener///, 9001/open/tcp//tor-orport///, 30000/open/tcp//ndmps///	Ignored State: filtered (990)
-# Nmap done at Mon Aug 24 14:09:42 2026 -- 1 IP address (1 host up) scanned in 5.08 seconds

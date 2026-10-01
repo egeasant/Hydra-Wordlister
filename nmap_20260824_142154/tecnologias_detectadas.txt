@@ -1,5 +1,0 @@
-http-proxy HAProxy http proxy
-openvpn OpenVPN
-rsf-1?
-ssl/http-proxy HAProxy http proxy
-ssl/http-proxy HAProxy http proxy 2.0.0 or later
